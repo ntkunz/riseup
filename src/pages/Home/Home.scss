@@ -1,0 +1,477 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/global' as *;
+
+// ======= HEADER LOGOS ======
+
+.riseup-logo,
+.riseup-logo-2,
+.riseup-logo-3,
+.riseup-logo-4 {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  transform: rotate(16deg);
+  // width: 30vw;
+  // max-width: 20rem;
+
+  width: 45vw;
+  max-width: 26rem;
+}
+
+.riseup-logo-2 {
+  -webkit-filter: drop-shadow(1.5px 1.5px 0 black);
+  filter: drop-shadow(1.5px 1.5px 0 black);
+}
+
+.riseup-logo-3 {
+  -webkit-filter: drop-shadow(-1.5px -1.5px 0 black);
+  filter: drop-shadow(-1.5px -1.5px 0 black);
+}
+
+.riseup-logo-4 {
+  -webkit-filter: blur(0.625rem);
+  filter: blur(0.625rem);
+}
+
+// ======== HOME CONTAINER =========
+
+.home {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  // background-color: pink;
+
+  background: linear-gradient(
+    $red-light 25%,
+    $red-dark 30%,
+    $green-dark 35%,
+    $green-light 40%,
+    $yellow-dark 70%,
+    $yellow-light 75%,
+    $red-light 95%
+  );
+
+  background: linear-gradient(
+    $red-dark 25%,
+    $red-light 30%,
+    $green-light 35%,
+    $green-dark 40%,
+    $yellow-light 70%,
+    $yellow-dark 75%,
+    $red-dark 95%
+  );
+}
+
+// ========= HEADER =========
+
+.header {
+  width: 100%;
+  background-image: url('../../assets/images/riseup-marketplace-front-view.jpg');
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 16 / 9;
+  max-height: 24rem;
+
+  &__details {
+    text-align: left;
+    margin: 0;
+
+    &-container {
+      margin-bottom: 7rem;
+      width: fit-content;
+      background-color: rgba($black-dark-rgb, 0.9);
+      color: $yellow-light;
+      // text-shadow: 0.1em 0.1em 0 $red-light, 0 0 0.1em $green-light;
+      text-shadow: 0.05rem 0.05rem 0.1em $red-light;
+      padding: calc(1vw + 0.7rem);
+      font-size: clamp(0.563rem, 0.066rem + 1.324vw, 1.125rem);
+      border-bottom-right-radius: 10rem;
+
+      @include tablet {
+      }
+    }
+  }
+}
+
+// ============ RADIO PLAYER ===========
+
+.radio-player {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  gap: 2vw;
+  padding-left: 2vw;
+  padding: 4rem 0;
+  // background: linear-gradient(
+  //   $green-dark,
+  //   $green-light 25%,
+  //   $green-light 75%,
+  //   $yellow-dark
+  // );
+  height: calc(15vw);
+  min-height: 4rem;
+  max-height: 10rem;
+  transition: 0.5s;
+
+  &:hover {
+    cursor: pointer;
+
+    background: linear-gradient(
+      $yellow-dark,
+      $yellow-light 25%,
+      $yellow-dark 75%
+    );
+  }
+
+  &__image {
+    height: 20vw;
+    min-height: 4rem;
+    max-height: 10rem;
+  }
+}
+
+// ======== GALLERY ========
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  // gap: 2rem;
+  // background: linear-gradient($yellow-dark, $yellow-dark, $red-dark);
+  padding: 0 0.5rem;
+  gap: 0.5rem;
+
+  @include tablet {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  &__image {
+    outline: 0.125rem solid $black-light;
+    margin: 1rem;
+    width: 40vw;
+    flex-grow: 1;
+
+    @include tablet {
+      width: 5vw;
+      // width: 20vw;
+    }
+  }
+}
+
+// ========== MENU ==========
+.menu {
+  // background: linear-gradient($red-dark, $yellow-light, $yellow-dark);
+  padding: 0 1rem 2rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    outline: 1px solid $black-light;
+  }
+
+  &__title {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    color: $yellow-light;
+    text-shadow: 0.05rem 0.05rem 0.05em $green-light,
+      0.125rem 0.125rem 0.1rem $red-dark, 0.2rem 0.2rem 0.1rem $red-dark,
+      0.3rem 0.3rem 0.1rem $black-dark;
+  }
+
+  &__navbar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__button {
+    border: none;
+    background-color: $yellow-dark;
+    letter-spacing: 0.125rem;
+    width: 100%;
+    // text-shadow: 0.05rem 0.05rem 0.1em $green-light;
+    padding: 0.5rem 0;
+    border-left: 0.025rem solid black;
+    border-right: 0.025rem solid black;
+    font-family: alumni-sans, Avenir, Helvetica, sans-serif;
+    transition: color ease-in-out 0.125s;
+    // font-weight: 600;
+    // font-size: 1.25rem;
+
+    &:hover {
+      cursor: pointer;
+      // background-color: $red-light;
+      // background-color: rgba($green-light, 0.5);
+      background: linear-gradient($yellow-dark, rgba($green-light, 0.75));
+      color: white;
+      text-shadow: 0.05rem 0.05rem 0.05em $black-dark;
+    }
+  }
+
+  .active {
+    font-weight: bold;
+    // background-color: rgba($yellow-light-rgb, 0.5);
+    // background-color: $yellow-light;
+    background: linear-gradient($yellow-dark, $yellow-light 20%);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  &__item-container {
+    color: $black-dark;
+    display: flex;
+    flex-direction: column;
+    background-color: $yellow-light;
+    // margin: 0.75rem 0 0;
+    padding: 1.5rem 0.5rem;
+    border-bottom: 1px solid $green-light;
+    // background-color: rgba($green-light-rgb, 0.2);
+    // background: linear-gradient($yellow-light, $red-light 150%);
+  }
+
+  &__item-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.125rem;
+  }
+
+  &__item-title {
+    text-shadow: 0.05rem 0.05rem 0.1em $green-light;
+  }
+
+  &__item-price {
+    // font-size: 0.85rem;
+    // font-weight: 600;
+    margin-right: 1rem;
+    // color: white;
+    background-color: rgba($green-light-rgb, 0.5);
+    padding: 0.25rem 0.5rem;
+  }
+
+  &__item-description {
+    text-align: left;
+    color: $black-dark;
+    margin: 0.25rem;
+    // font-weight: 600;
+  }
+}
+
+// ======== SCROLL GALLERY ========
+
+.carousel {
+  width: 400vw;
+  max-width: 80rem;
+  overflow: hidden;
+  // background-image: url('../../assets/logo/riseup-logo-black-and-white.png'),
+  //   url('../../assets/logo/riseup-logo-monochrome.png');
+  background-image: url('../../assets/logo/riseup-logo-monochrome.png');
+  // background-blend-mode: difference;
+  background-position: center;
+  background-size: contain;
+
+  &__container {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    animation: continuousScroll 60s linear infinite;
+  }
+
+  &__image {
+    width: $carousel-image-width;
+    border: 3rem solid rgba($green-dark-rgb, 0);
+  }
+}
+
+@keyframes continuousScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-#{$carousel-image-width} * 8));
+  }
+}
+
+// ================ FOOTER ===============
+.footer {
+  height: 10rem;
+  color: white;
+}
+
+// ================ RADIO PLAYER ===============
+// .radio-player {
+//   display: inline;
+// }
+
+// .mytuner-widget {
+//   all: initial;
+//   // display: block;
+//   display: inline;
+//   color: #313131;
+// }
+
+// .mytuner-widget,
+// .mytuner-widget * {
+//   box-sizing: border-box;
+//   font-family: sans-serif;
+// }
+
+// .main-play-button {
+//   padding: 5px;
+//   border-radius: 20px;
+//   width: 40px;
+//   height: 40px;
+//   // float: left;
+//   margin-left: 10px;
+//   margin-right: 15px;
+//   margin-top: 12.5px;
+//   cursor: pointer;
+//   background-color: #fff;
+//   box-shadow: 1px 2px 6px -3px black;
+//   display: inline-block;
+// }
+
+// .main-play-button:hover {
+//   background-color: #eee;
+// }
+
+// .main-play-button.disabled {
+//   filter: grayscale(1);
+//   cursor: not-allowed;
+// }
+
+// .main-play-button div {
+//   background: url('https://mytuner-radio.com/static/icons/widgets/BT_Play/BT_Play@2x.png')
+//     no-repeat center;
+//   background-size: 16px;
+//   width: 28px;
+//   height: 28px;
+//   margin-left: 3px;
+// }
+
+// .main-play-button.loading div {
+//   background: url('https://static2.mytuner.mobi/static/images/sprite-loading.gif')
+//     no-repeat center;
+//   filter: grayscale(1);
+//   background-size: 28px;
+//   margin-left: 2px;
+// }
+
+// .main-play-button.playing div {
+//   background: url('https://mytuner-radio.com/static/icons/widgets/BT_Pause/BT_Pause@2x.png')
+//     no-repeat center;
+//   background-size: 16px;
+//   margin-left: 2px;
+// }
+
+// .main-play-button.error div {
+//   background: url('https://mytuner-radio.com/static/icons/widgets/BT_Error/erro@2x.png')
+//     no-repeat center;
+//   background-size: 16px;
+//   margin-left: 0;
+// }
+
+// .play-button {
+//   background: url('https://mytuner-radio.com/static/icons/widgets/BT_Play/BT_Play.png')
+//     no-repeat center;
+//   width: 40px;
+//   height: 40px;
+//   cursor: pointer;
+//   display: inline-flex;
+//   align-items: center;
+//   margin: auto 4px auto 19px; /* align with radio logo */
+// }
+
+// .play-button.loading {
+//   background: url('https://static2.mytuner.mobi/static/images/sprite-loading.gif')
+//     no-repeat center;
+//   filter: grayscale(1);
+//   background-size: 28px;
+// }
+// .play-button.playing {
+//   background: url('https://mytuner-radio.com/static/icons/widgets/BT_Pause/BT_Pause.png')
+//     no-repeat center;
+// }
+// .play-button.error {
+//   background: url('https://mytuner-radio.com/static/icons/widgets/BT_Error/erro.png')
+//     no-repeat center;
+//   background-size: 15px;
+// }
+// .play-button.disabled {
+//   opacity: 0.3;
+// }
+// .play-button.disabled:hover {
+//   cursor: not-allowed;
+// }
+// input[type='range'][orient='vertical'] {
+//   writing-mode: bt-lr;
+//   /* -webkit-appearance: -webkit-appearance: slider-vertical; */
+//   /* WebKit */
+//   width: 8px;
+//   padding: 0 5px;
+// }
+// .volume-controls {
+//   width: 35px;
+//   height: 35px;
+//   display: inline-block;
+//   position: absolute;
+//   margin-left: 5px;
+//   margin-top: 14px;
+//   padding-top: 0;
+//   border-radius: 20px;
+//   box-sizing: content-box !important;
+//   z-index: 10; /* animation */
+//   border: 1px solid transparent;
+//   transition: background 0.5s, padding 0.5s, margin 0.5s, border 0.5s;
+//   overflow: hidden;
+// }
+// .volume-controls:hover {
+//   padding-top: 140px; /* add original margin */
+//   margin-top: -126px;
+//   background-color: #f2f2f2;
+//   border: 1px solid grey;
+//   transition: background 0.5s, padding 0.5s, margin 0.5s;
+// }
+// .volume-controls:hover > .volume-control {
+//   display: block;
+// }
+// .volume-controls .volume-control {
+//   opacity: 0;
+//   margin-top: -126px;
+//   margin-left: 13px;
+//   position: absolute;
+//   transition: 0.5s all;
+// }
+// .volume-controls:hover .volume-control {
+//   opacity: 1;
+// }
+// .volume-controls .volume-indicator {
+//   cursor: pointer;
+//   display: block;
+// }
+// .player-radio-link {
+//   width: calc(100% - 65px - 84px - 37px - 12px);
+// }
+// .player-radio-name {
+//   width: calc(100% - 74px - 10px);
+// }
+// .player-mytuner-logo {
+//   margin-left: 47px;
+// }
+// @media (max-width: 480px) {
+//   .player-radio-link {
+//     width: calc(100% - 65px - 84px - 12px);
+//   }
+//   .player-mytuner-logo {
+//     margin-left: 10px;
+//   }
+//   .volume-controls {
+//     display: none;
+//   }
+// }

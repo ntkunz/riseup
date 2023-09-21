@@ -1,0 +1,30 @@
+@use './_mixins.scss' as mixins;
+
+$red-light: #ad2922;
+$red-light-rgb: rgb(173, 41, 34);
+
+$red-dark: #771f1a;
+$red-dark-rgb: rgb(119, 31, 26);
+
+$yellow-light: #f0bd2e;
+$yellow-light-rgb: rgb(240, 189, 46);
+
+$yellow-dark: #b19030;
+$yellow-dark-rgb: rgb(177, 144, 48);
+
+$green-light: #118142;
+$green-light-rgb: rgb(17, 129, 66);
+
+$green-dark: #00481f;
+$green-dark-rgb: rgb(0, 72, 31);
+
+$black-light: #313131;
+$black-light-rgb: rgb(49, 49, 49);
+
+$black-dark: #0a0a0a;
+$black-dark-rgb: rgb(10, 10, 10);
+
+$carousel-image-width: 60vw;
+// @include mixins.tablet {
+//   $carousel-image-width: 50vw;
+// }
