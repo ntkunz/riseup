@@ -217,6 +217,7 @@
     background-color: $yellow-dark;
     letter-spacing: 0.125rem;
     width: 100%;
+    font-size: 1rem;
     // text-shadow: 0.05rem 0.05rem 0.1em $green-light;
     padding: 0.5rem 0;
     border-left: 0.025rem solid black;
@@ -225,6 +226,10 @@
     transition: color ease-in-out 0.125s;
     // font-weight: 600;
     // font-size: 1.25rem;
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
 
     &:hover {
       cursor: pointer;
@@ -283,6 +288,7 @@
     text-align: left;
     color: $black-dark;
     margin: 0.25rem;
+    font-size: 1.2rem;
     // font-weight: 600;
   }
 }
