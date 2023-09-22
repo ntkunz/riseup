@@ -42,15 +42,15 @@
   flex: 1;
   // background-color: pink;
 
-  background: linear-gradient(
-    $red-light 25%,
-    $red-dark 30%,
-    $green-dark 35%,
-    $green-light 40%,
-    $yellow-dark 70%,
-    $yellow-light 75%,
-    $red-light 95%
-  );
+  // background: linear-gradient(
+  //   $red-light 25%,
+  //   $red-dark 30%,
+  //   $green-dark 35%,
+  //   $green-light 40%,
+  //   $yellow-dark 70%,
+  //   $yellow-light 75%,
+  //   $red-light 95%
+  // );
 
   background: linear-gradient(
     $red-dark 25%,
@@ -69,7 +69,7 @@
   width: 100%;
   background-image: url('../../assets/images/riseup-marketplace-front-view.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   aspect-ratio: 16 / 9;
   max-height: 24rem;
 
@@ -90,6 +90,31 @@
 
       @include tablet {
       }
+    }
+  }
+}
+
+// ================ TAGLINE =============
+
+.tagline {
+  padding: 3rem 0;
+
+  &__text {
+    font-family: alumni-sans, 'Gill Sans', 'Gill Sans MT', Calibri,
+      'Trebuchet MS', sans-serif;
+    letter-spacing: 0.25rem;
+    color: $yellow-light;
+    text-shadow: 0.05rem 0.05rem 0.05em $green-light,
+      0.125rem 0.125rem 0.05rem $red-light, 0.2rem 0.2rem 0.1rem $green-dark,
+      0.3rem 0.3rem 0.1rem $black-dark;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+
+    @include tablet {
+      font-size: 3rem;
+      letter-spacing: 0.5rem;
     }
   }
 }

@@ -2,7 +2,7 @@ import "./Home.scss";
 import { useState } from "react";
 import logoColor from '/logos/riseup-logo-color.png';
 import logoMonochrome from '/logos/riseup-logo-monochrome.png';
-import recordPlayer from '/logos/record-player.svg';
+// import recordPlayer from '/logos/record-player.svg';
 
 export default function Home() {
 
@@ -33,14 +33,18 @@ export default function Home() {
                </div>
             </header>
 
+            <section className="tagline">
+               <h2 className="tagline__text">Making community convenient</h2>
+            </section>
+
             {/* ============ RADIO PLAYER ================ */}
 
-            <section className="radio-player">
+            {/* <section className="radio-player">
                <img src={recordPlayer} className="radio-player__image" alt="clickable radio logo to stream caribbean music" />
                <h2 className="radio-player__title">Start Streaming Tunes</h2>
                <p>Not working yet</p>
 
-            </section>
+            </section> */}
 
             {/* =============== PHOTO GALLERY ================= */}
 
