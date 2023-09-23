@@ -40,6 +40,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  // background-color: $black-light;
   // background-color: pink;
 
   // background: linear-gradient(
@@ -62,15 +63,15 @@
   //   $red-dark 95%
   // );
 
-  background: linear-gradient(
-    rgba($red-dark-rgb, 0.5) 10%,
-    rgba($red-light-rgb, 0.5) 25%,
-    rgba($green-light-rgb, 0.5) 35%,
-    rgba($green-dark-rgb, 0.5) 45%,
-    rgba($yellow-light-rgb, 0.5) 60%,
-    rgba($yellow-dark-rgb, 0.5) 75%,
-    rgba($red-dark-rgb, 0.5) 95%
-  );
+  // background: linear-gradient(
+  //   rgba($red-dark-rgb, 0.5) 10%,
+  //   rgba($red-light-rgb, 0.5) 25%,
+  //   rgba($green-light-rgb, 0.5) 35%,
+  //   rgba($green-dark-rgb, 0.5) 45%,
+  //   rgba($yellow-light-rgb, 0.5) 60%,
+  //   rgba($yellow-dark-rgb, 0.5) 75%,
+  //   rgba($red-dark-rgb, 0.5) 95%
+  // );
 }
 
 // ========= HEADER =========
