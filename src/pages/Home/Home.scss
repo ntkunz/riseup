@@ -52,14 +52,24 @@
   //   $red-light 95%
   // );
 
+  // background: linear-gradient(
+  //   $red-dark 25%,
+  //   $red-light 30%,
+  //   $green-light 35%,
+  //   $green-dark 40%,
+  //   $yellow-light 70%,
+  //   $yellow-dark 75%,
+  //   $red-dark 95%
+  // );
+
   background: linear-gradient(
-    $red-dark 25%,
-    $red-light 30%,
-    $green-light 35%,
-    $green-dark 40%,
-    $yellow-light 70%,
-    $yellow-dark 75%,
-    $red-dark 95%
+    rgba($red-dark-rgb, 0.5) 10%,
+    rgba($red-light-rgb, 0.5) 25%,
+    rgba($green-light-rgb, 0.5) 35%,
+    rgba($green-dark-rgb, 0.5) 45%,
+    rgba($yellow-light-rgb, 0.5) 60%,
+    rgba($yellow-dark-rgb, 0.5) 75%,
+    rgba($red-dark-rgb, 0.5) 95%
   );
 }
 
