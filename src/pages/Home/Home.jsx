@@ -1,5 +1,8 @@
 import "./Home.scss";
 import { useState } from "react";
+import DoordashIcon from "../../components/Icons/DoordashIcon"
+import FacebookIcon from "../../components/Icons/FacebookIcon"
+import InstagramIcon from "../../components/Icons/InstagramIcon"
 import logoColor from '/logos/riseup-logo-color.png';
 import logoMonochrome from '/logos/riseup-logo-monochrome.png';
 // import recordPlayer from '/logos/record-player.svg';
@@ -235,8 +238,26 @@ export default function Home() {
 
             {/* // ============== FOOTER ================= */}
             <div className="footer">
-               <h3 className="footer__title">Some information, a footer, etc</h3>
-               <h3 className="footer__title">Let me know what ya think!</h3>
+
+               <div className="footer__store-details">
+                  <p className="footer__details">704 Vernon Dr, Vancouver, BC</p>
+                  <p className="footer__details">Mon - Fri 9-6 , Sat 10-4</p>
+               </div>
+
+               <h3 className="footer__details">Making Community Convenient</h3>
+
+               <div className="footer__social-container">
+                  <a className="footer__social-link" target="_blank" rel="noreferrer" href="https://www.facebook.com/riseupmarketplace/">
+                     <FacebookIcon />
+                  </a>
+                  <a className="footer__social-link" target="_blank" rel="noreferrer" href="https://www.instagram.com/riseupmarketplace/?hl=en">
+                     <InstagramIcon />
+                  </a>
+                  <a className="footer__social-link" target="_blank" rel="noreferrer" href="https://www.doordash.com/en-CA/store/rise-up-marketplace-vancouver-22918403/">
+                     <DoordashIcon />
+                  </a>
+               </div>
+
             </div>
 
 

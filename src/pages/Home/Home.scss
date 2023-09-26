@@ -342,8 +342,35 @@
 
 // ================ FOOTER ===============
 .footer {
-  height: 10rem;
   color: white;
+  margin: 0 auto;
+
+  &__details {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  &__social {
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 3rem 0;
+    }
+
+    &-link {
+      height: 2rem;
+      transition: transform ease-in-out 0.125s;
+
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.social-icon {
+  height: 3rem;
+  width: fit-content;
 }
 
 // ================ RADIO PLAYER ===============
