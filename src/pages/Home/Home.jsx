@@ -237,7 +237,7 @@ export default function Home() {
             </div>
 
             {/* // ============== FOOTER ================= */}
-            {/* <div className="footer">
+            <div className="footer">
 
                <div className="footer__store-details">
                   <p className="footer__details">704 Vernon Dr, Vancouver, BC</p>
@@ -246,7 +246,7 @@ export default function Home() {
 
                <h3 className="footer__details">Making Community Convenient</h3>
 
-               <div className="footer__social-container">
+               {/* <div className="footer__social-container">
                   <a className="footer__social-link" target="_blank" rel="noreferrer" href="https://www.facebook.com/riseupmarketplace/">
                      <FacebookIcon />
                   </a>
@@ -256,9 +256,9 @@ export default function Home() {
                   <a className="footer__social-link" target="_blank" rel="noreferrer" href="https://www.doordash.com/en-CA/store/rise-up-marketplace-vancouver-22918403/">
                      <DoordashIcon />
                   </a>
-               </div>
+               </div> */}
 
-            </div> */}
+            </div>
 
 
 
