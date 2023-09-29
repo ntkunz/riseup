@@ -237,7 +237,7 @@ export default function Home() {
             </div>
 
             {/* // ============== FOOTER ================= */}
-            <div className="footer">
+            {/* <div className="footer">
 
                <div className="footer__store-details">
                   <p className="footer__details">704 Vernon Dr, Vancouver, BC</p>
@@ -258,7 +258,7 @@ export default function Home() {
                   </a>
                </div>
 
-            </div>
+            </div> */}
 
 
 
