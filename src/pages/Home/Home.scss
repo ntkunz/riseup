@@ -319,11 +319,11 @@
   background-size: contain;
 
   &__container {
-    overflow: hidden;
+    // overflow: hidden;
     overflow-x: hidden;
     display: flex;
     align-items: center;
-    width: fit-content;
+    // width: fit-content;
     animation: continuousScroll 60s linear infinite;
   }
 
@@ -349,7 +349,7 @@
 // ================ FOOTER ===============
 .footer {
   color: white;
-  margin: 0 auto;
+  // margin: 0 auto;
 
   &__details {
     font-size: clamp(1.25rem, 3vw, 1.5rem);
