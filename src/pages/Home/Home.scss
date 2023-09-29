@@ -319,11 +319,12 @@
   background-size: contain;
 
   &__container {
-    // overflow: hidden;
+    overflow: hidden;
     overflow-x: hidden;
     display: flex;
     align-items: center;
-    // width: fit-content;
+    width: fit-content;
+    max-width: 95vw;
     animation: continuousScroll 60s linear infinite;
   }
 
