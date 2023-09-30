@@ -29,6 +29,10 @@
   }
 
   &__button {
+    //adding to try and solve safari spacing issue
+    vertical-align: middle;
+    line-height: 1;
+
     border: none;
     background-color: $yellow-dark;
     letter-spacing: 0.125rem;
