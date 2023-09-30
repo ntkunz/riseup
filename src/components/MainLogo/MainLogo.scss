@@ -1,0 +1,38 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/global' as *;
+
+.riseup-logo,
+.riseup-logo-2,
+.riseup-logo-3,
+.riseup-logo-4 {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  transform: rotate(16deg);
+  width: 45vw;
+  max-width: 26rem;
+
+  @include tablet {
+    top: 0rem;
+  }
+}
+
+.riseup-logo-2 {
+  -webkit-filter: drop-shadow(1.5px 1.5px 0 $white-dark);
+  filter: drop-shadow(1.5px 1.5px 0 $white-dark);
+}
+
+.riseup-logo-3 {
+  -webkit-filter: drop-shadow(0 0 0.125rem $white-dark);
+  filter: drop-shadow(0 0 0.125rem $white-dark);
+  // -webkit-filter: drop-shadow(0.01px 0.01px 0 $white-dark);
+  // filter: drop-shadow(0.01px 0.01px 0 $white-dark);
+}
+
+.riseup-logo-4 {
+  // -webkit-filter: blur(0.625rem);
+  // filter: blur(0.625rem);
+  -webkit-filter: drop-shadow(0 0 0.75rem $white-dark);
+  filter: drop-shadow(0 0 0.75rem $white-dark);
+}

@@ -1,0 +1,104 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/global' as *;
+
+.menu {
+  padding: 0 1rem 2rem;
+
+  &__title {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    color: $yellow-light;
+    text-shadow: $multi-color-shadow;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    outline: 1px solid $black-light;
+  }
+
+  &__navbar {
+    display: flex;
+    justify-content: space-evenly;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+  }
+
+  &__button {
+    border: none;
+    background-color: $yellow-dark;
+    letter-spacing: 0.125rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border-left: 0.025rem solid black;
+    border-right: 0.025rem solid black;
+    font-family: alumni-sans, Avenir, Helvetica, sans-serif;
+    transition: color ease-in-out 0.125s;
+
+    &:first-child {
+      border-left: none;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: linear-gradient($yellow-dark, rgba($green-light, 0.75));
+      color: white;
+      text-shadow: 0.05rem 0.05rem 0.05em $black-dark;
+    }
+  }
+
+  .active {
+    font-weight: bold;
+    background: linear-gradient($yellow-dark, $yellow-light 20%);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  &__item-container {
+    color: $black-dark;
+    display: flex;
+    flex-direction: column;
+    background-color: $yellow-light;
+    padding: 1.5rem 0.5rem;
+    border-bottom: 1px solid $green-light;
+  }
+
+  &__item-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.125rem;
+  }
+
+  &__item-title {
+    text-shadow: 0.05rem 0.05rem 0.1em $green-light;
+  }
+
+  &__item-price {
+    margin-right: 1rem;
+    background-color: rgba($green-light-rgb, 0.5);
+    padding: 0.25rem 0.5rem;
+  }
+
+  &__item-description {
+    text-align: left;
+    color: $black-dark;
+    margin: 0.25rem;
+    font-size: 1.2rem;
+  }
+}

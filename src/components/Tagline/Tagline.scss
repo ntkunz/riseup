@@ -1,0 +1,22 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/global.scss' as *;
+
+.tagline {
+  padding: 3rem 0;
+
+  &__text {
+    font-family: alumni-sans, 'Gill Sans', 'Gill Sans MT', Calibri,
+      'Trebuchet MS', sans-serif;
+    letter-spacing: 0.25rem;
+    color: $yellow-light;
+    text-shadow: $multi-color-shadow;
+    font-size: 2rem;
+    font-weight: 700;
+
+    @include tablet {
+      font-size: 3rem;
+      letter-spacing: 0.5rem;
+    }
+  }
+}

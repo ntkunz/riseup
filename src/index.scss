@@ -14,13 +14,28 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p {
   margin: 0;
   padding: 0;
 }
 
 html {
-  // background-color: $black-dark;
+  overflow-x: hidden;
+}
+
+:root {
+  background-color: $black-dark;
+  font-family: quicksand, Avenir, Helvetica, sans-serif;
+  letter-spacing: 0.5vw;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 1280px;
+  overflow-x: hidden;
+}
+
+body {
   background: linear-gradient(
     rgba($red-dark-rgb, 0.5) 10%,
     rgba($red-light-rgb, 0.5) 25%,
@@ -30,35 +45,6 @@ html {
     rgba($yellow-dark-rgb, 0.5) 75%,
     rgba($red-dark-rgb, 0.5) 95%
   );
-  // max-width: 90vw;
-  overflow-x: hidden;
-}
-
-:root {
-  background-color: $black-dark;
-  // background: linear-gradient(
-  //   rgba($red-dark-rgb, 0.5) 10%,
-  //   rgba($red-light-rgb, 0.5) 25%,
-  //   rgba($green-light-rgb, 0.5) 35%,
-  //   rgba($green-dark-rgb, 0.5) 45%,
-  //   rgba($yellow-light-rgb, 0.5) 60%,
-  //   rgba($yellow-dark-rgb, 0.5) 75%,
-  //   rgba($red-dark-rgb, 0.5) 95%
-  // );
-  font-family: quicksand, Avenir, Helvetica, sans-serif;
-  // font-family: vidaloka, Arial, serif;
-  letter-spacing: 0.5vw;
-  line-height: 1.5;
-  text-align: center;
-  // margin: 0 auto;
-  max-width: 1280px;
-  overflow-x: hidden;
-  // scrollbar-gutter: stable;
-  // margin-left: 1rem;
-
-  // @include desktop {
-  //   margin-left: auto;
-  // }
 }
 
 h4,
@@ -72,6 +58,7 @@ p {
 p {
   letter-spacing: 0.1vw;
 }
+
 // ::-webkit-scrollbar {
 //   width: 16px;
 //   height: 16px;

@@ -24,6 +24,15 @@ $black-light-rgb: rgb(49, 49, 49);
 $black-dark: #0a0a0a;
 $black-dark-rgb: rgb(10, 10, 10);
 
+$white-light: #fff;
+$white-light-rgb: rgb(255, 255, 255);
+
+$white-dark: #e6e6e6;
+$white-dark-rgb: rgb(230, 230, 230);
+
+$multi-color-shadow: 0.05rem 0.05rem 0.1rem $black-light,
+  0.1rem 0.1rem 0.05rem $red-light, 0.2rem 0.2rem 0.05em $green-light;
+
 $carousel-image-width: 60vw;
 // @include mixins.tablet {
 //   $carousel-image-width: 80vw;

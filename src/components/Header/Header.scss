@@ -1,6 +1,31 @@
-@use "../../styles/global.scss" as *;
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/global.scss' as *;
 
 .header {
-  background-image: url("../../assets/images/record-clock.JPG");
-  background-size: contain;
+  width: 100%;
+  background-image: url('../../assets/images/riseup-marketplace-front-view.jpg');
+  background-size: cover;
+  background-position: top;
+  aspect-ratio: 16 / 9;
+  max-height: 24rem;
+
+  &__details {
+    text-align: left;
+    margin: 0;
+
+    &-container {
+      margin-bottom: 7rem;
+      width: fit-content;
+      background-color: rgba($black-dark-rgb, 0.9);
+      color: $yellow-light;
+      text-shadow: 0.05rem 0.05rem 0.1em $red-light;
+      padding: calc(1vw + 0.7rem);
+      font-size: clamp(0.563rem, 0.066rem + 1.324vw, 1.125rem);
+      border-bottom-right-radius: 10rem;
+
+      @include tablet {
+      }
+    }
+  }
 }

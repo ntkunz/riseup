@@ -2,136 +2,10 @@
 @use '../../styles/mixins' as *;
 @use '../../styles/global' as *;
 
-// ======= HEADER LOGOS ======
-
-.riseup-logo,
-.riseup-logo-2,
-.riseup-logo-3,
-.riseup-logo-4 {
-  position: absolute;
-  top: 2rem;
-  right: 1rem;
-  transform: rotate(16deg);
-  // width: 30vw;
-  // max-width: 20rem;
-
-  width: 45vw;
-  max-width: 26rem;
-}
-
-.riseup-logo-2 {
-  -webkit-filter: drop-shadow(1.5px 1.5px 0 black);
-  filter: drop-shadow(1.5px 1.5px 0 black);
-}
-
-.riseup-logo-3 {
-  -webkit-filter: drop-shadow(0 0 0.125rem white);
-  filter: drop-shadow(0 0 0.125rem white);
-  // -webkit-filter: drop-shadow(0.01px 0.01px 0 white);
-  // filter: drop-shadow(0.01px 0.01px 0 white);
-}
-
-.riseup-logo-4 {
-  // -webkit-filter: blur(0.625rem);
-  // filter: blur(0.625rem);
-  -webkit-filter: drop-shadow(0 0 0.75rem white);
-  filter: drop-shadow(0 0 0.75rem white);
-}
-
-// ======== HOME CONTAINER =========
-
 .home {
   display: flex;
   flex-direction: column;
   flex: 1;
-  // background-color: $black-light;
-  // background-color: pink;
-
-  // background: linear-gradient(
-  //   $red-light 25%,
-  //   $red-dark 30%,
-  //   $green-dark 35%,
-  //   $green-light 40%,
-  //   $yellow-dark 70%,
-  //   $yellow-light 75%,
-  //   $red-light 95%
-  // );
-
-  // background: linear-gradient(
-  //   $red-dark 25%,
-  //   $red-light 30%,
-  //   $green-light 35%,
-  //   $green-dark 40%,
-  //   $yellow-light 70%,
-  //   $yellow-dark 75%,
-  //   $red-dark 95%
-  // );
-
-  // background: linear-gradient(
-  //   rgba($red-dark-rgb, 0.5) 10%,
-  //   rgba($red-light-rgb, 0.5) 25%,
-  //   rgba($green-light-rgb, 0.5) 35%,
-  //   rgba($green-dark-rgb, 0.5) 45%,
-  //   rgba($yellow-light-rgb, 0.5) 60%,
-  //   rgba($yellow-dark-rgb, 0.5) 75%,
-  //   rgba($red-dark-rgb, 0.5) 95%
-  // );
-}
-
-// ========= HEADER =========
-
-.header {
-  width: 100%;
-  background-image: url('../../assets/images/riseup-marketplace-front-view.jpg');
-  background-size: cover;
-  background-position: top;
-  aspect-ratio: 16 / 9;
-  max-height: 24rem;
-
-  &__details {
-    text-align: left;
-    margin: 0;
-
-    &-container {
-      margin-bottom: 7rem;
-      width: fit-content;
-      background-color: rgba($black-dark-rgb, 0.9);
-      color: $yellow-light;
-      // text-shadow: 0.1em 0.1em 0 $red-light, 0 0 0.1em $green-light;
-      text-shadow: 0.05rem 0.05rem 0.1em $red-light;
-      padding: calc(1vw + 0.7rem);
-      font-size: clamp(0.563rem, 0.066rem + 1.324vw, 1.125rem);
-      border-bottom-right-radius: 10rem;
-
-      @include tablet {
-      }
-    }
-  }
-}
-
-// ================ TAGLINE =============
-
-.tagline {
-  padding: 3rem 0;
-
-  &__text {
-    font-family: alumni-sans, 'Gill Sans', 'Gill Sans MT', Calibri,
-      'Trebuchet MS', sans-serif;
-    letter-spacing: 0.25rem;
-    color: $yellow-light;
-    text-shadow: 0.05rem 0.05rem 0.05em $green-light,
-      0.125rem 0.125rem 0.05rem $red-light, 0.2rem 0.2rem 0.1rem $green-dark,
-      0.3rem 0.3rem 0.1rem $black-dark;
-    font-size: 2rem;
-    font-weight: 700;
-    position: relative;
-    z-index: 1;
-
-    @include tablet {
-      font-size: 3rem;
-      letter-spacing: 0.5rem;
-    }
-  }
 }
 
 // ============ RADIO PLAYER ===========
@@ -143,12 +17,6 @@
   gap: 2vw;
   padding-left: 2vw;
   padding: 4rem 0;
-  // background: linear-gradient(
-  //   $green-dark,
-  //   $green-light 25%,
-  //   $green-light 75%,
-  //   $yellow-dark
-  // );
   height: calc(15vw);
   min-height: 4rem;
   max-height: 10rem;
@@ -156,7 +24,6 @@
 
   &:hover {
     cursor: pointer;
-
     background: linear-gradient(
       $yellow-dark,
       $yellow-light 25%,
@@ -168,143 +35,6 @@
     height: 20vw;
     min-height: 4rem;
     max-height: 10rem;
-  }
-}
-
-// ======== GALLERY ========
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  // gap: 2rem;
-  // background: linear-gradient($yellow-dark, $yellow-dark, $red-dark);
-  padding: 0 0.5rem;
-  gap: 0.5rem;
-
-  @include tablet {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-
-  &__image {
-    outline: 0.125rem solid $black-light;
-    margin: 1rem;
-    width: 40vw;
-    flex-grow: 1;
-
-    @include tablet {
-      width: 5vw;
-      // width: 20vw;
-    }
-  }
-}
-
-// ========== MENU ==========
-.menu {
-  // background: linear-gradient($red-dark, $yellow-light, $yellow-dark);
-  padding: 0 1rem 2rem;
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    outline: 1px solid $black-light;
-  }
-
-  &__title {
-    text-align: center;
-    padding-bottom: 2rem;
-    font-size: 3rem;
-    color: $yellow-light;
-    text-shadow: 0.05rem 0.05rem 0.05em $green-light,
-      0.125rem 0.125rem 0.1rem $red-dark, 0.2rem 0.2rem 0.1rem $red-dark,
-      0.3rem 0.3rem 0.1rem $black-dark;
-  }
-
-  &__navbar {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  &__button {
-    border: none;
-    background-color: $yellow-dark;
-    letter-spacing: 0.125rem;
-    width: 100%;
-    font-size: 1rem;
-    // text-shadow: 0.05rem 0.05rem 0.1em $green-light;
-    padding: 0.5rem 0;
-    border-left: 0.025rem solid black;
-    border-right: 0.025rem solid black;
-    font-family: alumni-sans, Avenir, Helvetica, sans-serif;
-    transition: color ease-in-out 0.125s;
-    // font-weight: 600;
-    // font-size: 1.25rem;
-
-    @include tablet {
-      font-size: 1.5rem;
-    }
-
-    &:hover {
-      cursor: pointer;
-      // background-color: $red-light;
-      // background-color: rgba($green-light, 0.5);
-      background: linear-gradient($yellow-dark, rgba($green-light, 0.75));
-      color: white;
-      text-shadow: 0.05rem 0.05rem 0.05em $black-dark;
-    }
-  }
-
-  .active {
-    font-weight: bold;
-    // background-color: rgba($yellow-light-rgb, 0.5);
-    // background-color: $yellow-light;
-    background: linear-gradient($yellow-dark, $yellow-light 20%);
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-  }
-
-  &__item-container {
-    color: $black-dark;
-    display: flex;
-    flex-direction: column;
-    background-color: $yellow-light;
-    // margin: 0.75rem 0 0;
-    padding: 1.5rem 0.5rem;
-    border-bottom: 1px solid $green-light;
-    // background-color: rgba($green-light-rgb, 0.2);
-    // background: linear-gradient($yellow-light, $red-light 150%);
-  }
-
-  &__item-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    letter-spacing: 0.125rem;
-  }
-
-  &__item-title {
-    text-shadow: 0.05rem 0.05rem 0.1em $green-light;
-  }
-
-  &__item-price {
-    // font-size: 0.85rem;
-    // font-weight: 600;
-    margin-right: 1rem;
-    // color: white;
-    background-color: rgba($green-light-rgb, 0.5);
-    padding: 0.25rem 0.5rem;
-  }
-
-  &__item-description {
-    text-align: left;
-    color: $black-dark;
-    margin: 0.25rem;
-    font-size: 1.2rem;
-    // font-weight: 600;
   }
 }
 
