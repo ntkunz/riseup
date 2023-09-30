@@ -18,7 +18,7 @@
     flex-direction: column;
     border-radius: 0.5rem;
     overflow: hidden;
-    outline: 1px solid $black-light;
+    //  outline: 1px solid $black-light;
   }
 
   &__navbar {
@@ -34,7 +34,7 @@
     letter-spacing: 0.125rem;
     width: 100%;
     font-size: 1rem;
-    padding: 0.5rem 0;
+    //  padding: 0.5rem 0;
     font-family: alumni-sans, Avenir, Helvetica, sans-serif;
     transition: color ease-in-out 0.125s;
 
