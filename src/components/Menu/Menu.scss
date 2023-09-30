@@ -35,21 +35,15 @@
     width: 100%;
     font-size: 1rem;
     padding: 0.5rem 0;
-    border-left: 0.025rem solid black;
-    border-right: 0.025rem solid black;
     font-family: alumni-sans, Avenir, Helvetica, sans-serif;
     transition: color ease-in-out 0.125s;
 
-    &:first-child {
-      border-left: none;
-    }
-
-    &:last-child {
-      border-right: none;
-    }
-
     @include tablet {
       font-size: 1.5rem;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid black;
     }
 
     &:hover {
@@ -62,10 +56,9 @@
 
   .active {
     font-weight: bold;
+    color: white;
+    text-shadow: 0.05rem 0.05rem 0.05em $black-dark;
     background: linear-gradient($yellow-dark, $yellow-light 20%);
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
   }
 
   &__item-container {
@@ -79,13 +72,14 @@
 
   &__item-header {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     letter-spacing: 0.125rem;
   }
 
   &__item-title {
+    text-align: left;
     text-shadow: 0.05rem 0.05rem 0.1em $green-light;
   }
 
