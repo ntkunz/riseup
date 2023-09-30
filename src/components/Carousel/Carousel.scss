@@ -1,0 +1,38 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+@use '../../styles/global' as *;
+
+.carousel {
+  max-width: 80rem;
+  overflow: hidden;
+  //   background-image: url('../../assets/logo/riseup-logo-monochrome.png');
+  background-image: url('../../assets/logo/riseup-logo-color.png');
+  background-position: center;
+  background-size: contain;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    max-width: 100vw;
+    animation: continuousScroll 60s linear infinite;
+  }
+
+  &__image {
+    width: $carousel-image-width;
+    border: 1rem solid rgba($green-dark-rgb, 0);
+
+    @include tablet {
+      border: 3rem solid rgba($green-dark-rgb, 0);
+    }
+  }
+}
+
+@keyframes continuousScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-#{$carousel-image-width} * 8));
+  }
+}

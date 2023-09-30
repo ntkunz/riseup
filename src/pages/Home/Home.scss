@@ -5,7 +5,6 @@
 .home {
   display: flex;
   flex-direction: column;
-  flex: 1;
 }
 
 // ============ RADIO PLAYER ===========
@@ -13,7 +12,6 @@
 .radio-player {
   display: flex;
   align-items: center;
-  // justify-content: center;
   gap: 2vw;
   padding-left: 2vw;
   padding: 4rem 0;
@@ -40,80 +38,7 @@
 
 // ======== SCROLL GALLERY ========
 
-.carousel {
-  // width: 400vw;
-
-  max-width: 80rem;
-  overflow: hidden;
-  // background-image: url('../../assets/logo/riseup-logo-black-and-white.png'),
-  //   url('../../assets/logo/riseup-logo-monochrome.png');
-  background-image: url('../../assets/logo/riseup-logo-monochrome.png');
-  // background-blend-mode: difference;
-  background-position: center;
-  background-size: contain;
-
-  &__container {
-    // overflow: hidden;
-    // overflow-x: hidden;
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    max-width: 100vw;
-    animation: continuousScroll 60s linear infinite;
-  }
-
-  &__image {
-    width: $carousel-image-width;
-    border: 1rem solid rgba($green-dark-rgb, 0);
-
-    @include tablet {
-      border: 3rem solid rgba($green-dark-rgb, 0);
-    }
-  }
-}
-
-@keyframes continuousScroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-#{$carousel-image-width} * 8));
-  }
-}
-
 // ================ FOOTER ===============
-.footer {
-  color: white;
-  max-width: 100vw;
-  // margin: 0 auto;
-
-  &__details {
-    font-size: clamp(1.25rem, 3vw, 1.5rem);
-  }
-
-  &__social {
-    &-container {
-      display: flex;
-      justify-content: space-between;
-      padding: 3rem 0;
-    }
-
-    &-link {
-      // height: 2rem;
-      transition: transform ease-in-out 0.125s;
-
-      &:hover {
-        transform: scale(1.1);
-        cursor: pointer;
-      }
-    }
-  }
-}
-
-.social-icon {
-  height: 3rem;
-  width: fit-content;
-}
 
 // ================ RADIO PLAYER ===============
 // .radio-player {

@@ -1,15 +1,11 @@
 import "./Home.scss";
-import { useState } from "react";
 import Header from "../../components/Header/Header";
 import MainLogo from "../../components/MainLogo/MainLogo";
 import Tagline from "../../components/Tagline/Tagline";
 import PhotoGallery from "../../components/PhotoGallery/PhotoGallery"
 import Menu from "../../components/Menu/Menu";
-import DoordashIcon from "../../components/Icons/DoordashIcon"
-import FacebookIcon from "../../components/Icons/FacebookIcon"
-import InstagramIcon from "../../components/Icons/InstagramIcon"
-import logoColor from '/logos/riseup-logo-color.png';
-import logoMonochrome from '/logos/riseup-logo-monochrome.png';
+import Carousel from "../../components/Carousel/Carousel";
+import Footer from "../../components/Footer/Footer";
 // import recordPlayer from '/logos/record-player.svg';
 
 export default function Home() {
@@ -22,7 +18,8 @@ export default function Home() {
             <Tagline />
             <PhotoGallery />
             <Menu />
-
+            <Carousel />
+            <Footer />
 
 
             {/* ============ RADIO PLAYER ================ */}
@@ -33,60 +30,6 @@ export default function Home() {
                <p>Not working yet</p>
 
             </section> */}
-
-
-
-
-            {/* ============== CAROUSEL ================= */}
-            <div className="carousel">
-               <div className="carousel__container">
-                  <img src="/images/patio3.JPG" alt="riseup marketplace garden and patio" className="carousel__image" />
-                  <img src="/images/riseup-marketplace-bread-4.JPG" alt="riseup marketplace garden and patio" className="carousel__image" />
-                  <img src="/images/riseup-marketplace-merchandise-2.jpg" alt="riseup marketplace garden and patio" className="carousel__image" />
-                  <img src="/images/riseup-marketplace-pacman-1.jpg" alt="riseup marketplace garden and patio" className="carousel__image" />
-                  <img src="/images/riseup-mug.JPG" alt="riseup marketplace garden and patio" className="carousel__image" />
-                  <img src="/images/riseup-marketplace-patties-4.JPG" alt="riseup marketplace garden and patio" className="carousel__image" />
-                  <img src="/images/riseup-marketplace-dog-2.JPG" alt="riseup marketplace garden and patio" className="carousel__image" />
-                  <img src="/images/snickerdoodles-in-case-1.JPG" alt="riseup marketplace garden and patio" className="carousel__image" />
-
-
-                  <img src="/images/patio3.JPG" alt="riseup marketplace garden and patio" className="carousel__image" />
-                  <img src="/images/riseup-marketplace-bread-4.JPG" alt="riseup marketplace garden and patio" className="carousel__image" />
-                  <img src="/images/riseup-marketplace-merchandise-2.jpg" alt="riseup marketplace garden and patio" className="carousel__image" />
-                  <img src="/images/riseup-marketplace-pacman-1.jpg" alt="riseup marketplace garden and patio" className="carousel__image" />
-                  <img src="/images/riseup-mug.JPG" alt="riseup marketplace garden and patio" className="carousel__image" />
-                  <img src="/images/riseup-marketplace-patties-4.JPG" alt="riseup marketplace garden and patio" className="carousel__image" />
-                  <img src="/images/riseup-marketplace-dog-2.JPG" alt="riseup marketplace garden and patio" className="carousel__image" />
-                  <img src="/images/snickerdoodles-in-case-1.JPG" alt="riseup marketplace garden and patio" className="carousel__image" />
-
-               </div>
-            </div>
-
-            {/* // ============== FOOTER ================= */}
-            <div className="footer">
-
-               <div className="footer__store-details">
-                  <p className="footer__details">704 Vernon Dr, Vancouver, BC</p>
-                  <p className="footer__details">Mon - Fri 9-6 , Sat 10-4</p>
-               </div>
-
-               <h3 className="footer__details">Making Community Convenient</h3>
-
-               {/* <div className="footer__social-container">
-                  <a className="footer__social-link" target="_blank" rel="noreferrer" href="https://www.facebook.com/riseupmarketplace/">
-                     <FacebookIcon />
-                  </a>
-                  <a className="footer__social-link" target="_blank" rel="noreferrer" href="https://www.instagram.com/riseupmarketplace/?hl=en">
-                     <InstagramIcon />
-                  </a>
-                  <a className="footer__social-link" target="_blank" rel="noreferrer" href="https://www.doordash.com/en-CA/store/rise-up-marketplace-vancouver-22918403/">
-                     <DoordashIcon />
-                  </a>
-               </div> */}
-
-            </div>
-
-
 
 
             {/* ================ LIVE STREAM ================= */}
@@ -117,14 +60,10 @@ export default function Home() {
                   </div>
                </div> */}
 
-
-            {/* <Header /> */}
-            {/* <Hero /> */}
-            {/* <Gallery /> */}
-            {/* <Menu /> */}
-            {/* <About /> */}
-            {/* <Footer /> */}
          </div>
       </main >
    );
 }
+
+
+

@@ -36,14 +36,23 @@ html {
 }
 
 body {
+  // background: linear-gradient(
+  //   rgba($red-dark-rgb, 0.5) 10%,
+  //   rgba($red-light-rgb, 0.5) 25%,
+  //   rgba($green-light-rgb, 0.5) 35%,
+  //   rgba($green-dark-rgb, 0.5) 45%,
+  //   rgba($yellow-light-rgb, 0.5) 60%,
+  //   rgba($yellow-dark-rgb, 0.5) 75%,
+  //   rgba($red-dark-rgb, 0.5) 95%
+  // );
   background: linear-gradient(
-    rgba($red-dark-rgb, 0.5) 10%,
-    rgba($red-light-rgb, 0.5) 25%,
-    rgba($green-light-rgb, 0.5) 35%,
-    rgba($green-dark-rgb, 0.5) 45%,
-    rgba($yellow-light-rgb, 0.5) 60%,
-    rgba($yellow-dark-rgb, 0.5) 75%,
-    rgba($red-dark-rgb, 0.5) 95%
+    rgba($red-dark-rgb, 0.3) 10%,
+    rgba($red-light-rgb, 0.3) 25%,
+    rgba($yellow-light-rgb, 0.3) 30%,
+    rgba($yellow-dark-rgb, 0.3) 45%,
+    rgba($green-light-rgb, 0.3) 50%,
+    rgba($green-dark-rgb, 0.3) 65%,
+    rgba($black-dark-rgb, 0.3) 95%
   );
 }
 
