@@ -16,8 +16,8 @@ export default function Home() {
 
          {/* =========== HEADER LOGO =================== */}
 
-         <img src={logoMonochrome} alt="" className="riseup-logo-4" />
-         <img src={logoMonochrome} alt="" className="riseup-logo-4" />
+         {/* <img src={logoMonochrome} alt="" className="riseup-logo-4" />
+         <img src={logoMonochrome} alt="" className="riseup-logo-4" /> */}
          <img src={logoColor} alt="" className="riseup-logo-4" />
          <img src={logoMonochrome} alt="" className="riseup-logo-4" />
          <img src={logoMonochrome} alt="" className="riseup-logo-3" />

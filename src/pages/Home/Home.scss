@@ -25,15 +25,17 @@
 }
 
 .riseup-logo-3 {
-  -webkit-filter: drop-shadow(0 0 1px white);
-  filter: drop-shadow(0 0 1px white);
+  -webkit-filter: drop-shadow(0 0 0.125rem white);
+  filter: drop-shadow(0 0 0.125rem white);
   // -webkit-filter: drop-shadow(0.01px 0.01px 0 white);
   // filter: drop-shadow(0.01px 0.01px 0 white);
 }
 
 .riseup-logo-4 {
-  -webkit-filter: blur(0.625rem);
-  filter: blur(0.625rem);
+  // -webkit-filter: blur(0.625rem);
+  // filter: blur(0.625rem);
+  -webkit-filter: drop-shadow(0 0 0.75rem white);
+  filter: drop-shadow(0 0 0.75rem white);
 }
 
 // ======== HOME CONTAINER =========
