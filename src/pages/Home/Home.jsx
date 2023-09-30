@@ -12,7 +12,7 @@ export default function Home() {
    const [menu, setMenu] = useState('food');
 
    return (
-      <div className="container">
+      <main className="container">
 
          {/* =========== HEADER LOGO =================== */}
 
@@ -299,6 +299,6 @@ export default function Home() {
             {/* <About /> */}
             {/* <Footer /> */}
          </div>
-      </div>
+      </main>
    );
 }
