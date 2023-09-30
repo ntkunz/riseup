@@ -26,19 +26,21 @@
     justify-content: space-evenly;
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
+    margin: 0;
   }
 
   &__button {
     //adding to try and solve safari spacing issue
     vertical-align: middle;
     line-height: 1;
-
+    color: $white-dark;
+    text-shadow: 0.05rem 0.05rem 0.05em $black-dark;
     border: none;
     background-color: $yellow-dark;
     letter-spacing: 0.125rem;
     width: 100%;
     font-size: 1rem;
-    //  padding: 0.5rem 0;
+    padding: 0.5rem 0;
     font-family: alumni-sans, Avenir, Helvetica, sans-serif;
     transition: color ease-in-out 0.125s;
 
@@ -52,9 +54,9 @@
 
     &:hover {
       cursor: pointer;
-      background: linear-gradient($yellow-dark, rgba($yellow-light, 0.75));
-      color: white;
-      text-shadow: 0.05rem 0.05rem 0.05em $black-dark;
+      background: linear-gradient($yellow-light, rgba($yellow-light, 0.75));
+      color: $white-light;
+      text-shadow: 0.05rem 0.05rem 0.05em $black-light;
     }
   }
 
