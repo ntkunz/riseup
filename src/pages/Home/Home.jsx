@@ -14,7 +14,7 @@ export default function Home() {
          <MainLogo />
          <div className="home">
             <Header />
-            <Tagline />
+            {/* <Tagline /> */}
             <PhotoGallery />
             <Menu />
             <Carousel />

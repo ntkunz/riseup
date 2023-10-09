@@ -14,6 +14,7 @@
   }
 
   &__text {
+    position: relative;
     font-family: alumni-sans, 'Gill Sans', 'Gill Sans MT', Calibri,
       'Trebuchet MS', sans-serif;
     letter-spacing: 0.125rem;
@@ -21,6 +22,7 @@
     text-shadow: $multi-color-shadow;
     font-size: 2rem;
     font-weight: 700;
+    z-index: 3;
 
     @include tablet {
       font-size: 3rem;

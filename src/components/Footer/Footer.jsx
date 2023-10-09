@@ -14,7 +14,7 @@ export default function Footer() {
 
          <h3 className="footer__details">Making Community Convenient</h3>
 
-         {/* <div className="footer__social-container">
+         <div className="footer__social-container">
             <a className="footer__social-link" target="_blank" rel="noreferrer" href="https://www.facebook.com/riseupmarketplace/">
                <FacebookIcon />
             </a>
@@ -24,7 +24,7 @@ export default function Footer() {
             <a className="footer__social-link" target="_blank" rel="noreferrer" href="https://www.instagram.com/riseupmarketplace/?hl=en">
                <InstagramIcon />
             </a>
-         </div> */}
+         </div>
       </div>
    )
 }
