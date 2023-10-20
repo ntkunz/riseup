@@ -1,6 +1,6 @@
 import "./Home.scss";
 import Header from "../../components/Header/Header";
-import MainLogo from "../../components/MainLogo/MainLogo";
+// import MainLogo from "../../components/MainLogo/MainLogo";
 import Tagline from "../../components/Tagline/Tagline";
 import PhotoGallery from "../../components/PhotoGallery/PhotoGallery"
 import Menu from "../../components/Menu/Menu";
@@ -11,7 +11,7 @@ export default function Home() {
 
    return (
       <main className="container">
-         <MainLogo />
+         {/* <MainLogo /> */}
          <div className="home">
             <Header />
             <Tagline />

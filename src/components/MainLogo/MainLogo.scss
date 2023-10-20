@@ -7,16 +7,19 @@
 .riseup-logo-3,
 .riseup-logo-4 {
   position: absolute;
-  // top: 2rem;
-  top: 12rem;
-  right: 2rem;
+  bottom: 0;
+  // top: 8rem;
+  // top: 12rem;
+  right: 0rem;
   // transform: rotate(16deg);
   width: 45vw;
   max-width: 26rem;
+  z-index: 1;
 
-  @include tablet {
-    top: 0rem;
-  }
+  // @include tablet {
+  //   top: 0rem;
+  //   right: 2rem;
+  // }
 }
 
 .riseup-logo-2 {

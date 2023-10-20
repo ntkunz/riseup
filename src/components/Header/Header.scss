@@ -3,35 +3,83 @@
 @use '../../styles/global.scss' as *;
 
 .header {
-  margin-top: 5rem;
-  width: 100%;
-  background-image: url('../../assets/images/riseup-marketplace-front-view.jpg');
-  background-size: cover;
-  background-position: top;
-  aspect-ratio: 16 / 9;
-  max-height: 24rem;
+  // margin-top: 5rem;
+  // width: 100%;
+  // background-image: url('../../assets/images/riseup-marketplace-front-view.jpg');
+  // background-size: cover;
+  // background-position: top;
+  // aspect-ratio: 16 / 9;
+  // max-height: 24rem;
+  position: relative;
+
+  &__title {
+  }
+
+  &__image {
+    width: 100vw;
+    //dim the brightness of hte image some
+    filter: brightness(85%);
+  }
 
   &__details {
-    text-align: left;
+    text-align: center;
     margin: 0;
     font-size: 1rem;
+    letter-spacing: 0.1rem;
+
     @include tablet {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
+    }
+
+    @include desktop {
+      font-size: 2.5rem;
     }
 
     &-container {
-      margin-top: -5rem;
-      margin-bottom: 7rem;
-      width: fit-content;
+      // margin-top: -5rem;
       background-color: rgba($black-dark-rgb, 0.9);
       color: $yellow-light;
       text-shadow: 0.05rem 0.05rem 0.1em $red-light;
       padding: calc(1vw + 0.7rem);
       font-size: clamp(0.563rem, 0.066rem + 1.324vw, 1.125rem);
-      border-bottom-right-radius: 10rem;
 
       @include tablet {
+        width: fit-content;
+        padding: calc(1vw + 0.7rem) 3rem calc(1vw + 0.7rem) 1rem;
+        font-size: clamp(0.563rem, 0.066rem + 1.324vw, 1.125rem);
+        border-bottom-right-radius: 10rem;
       }
+
+      // @include desktop {
+      //   position: absolute;
+      //   margin-top: 0rem;
+      //   top: 0;
+      //   left: 0;
+      // }
     }
   }
+
+  // &__details {
+  //   text-align: left;
+  //   margin: 0;
+  //   font-size: 1rem;
+  //   @include tablet {
+  //     font-size: 1.5rem;
+  //   }
+
+  //   &-container {
+  //     margin-top: -5rem;
+  //     margin-bottom: 7rem;
+  //     width: fit-content;
+  //     background-color: rgba($black-dark-rgb, 0.9);
+  //     color: $yellow-light;
+  //     text-shadow: 0.05rem 0.05rem 0.1em $red-light;
+  //     padding: calc(1vw + 0.7rem);
+  //     font-size: clamp(0.563rem, 0.066rem + 1.324vw, 1.125rem);
+  //     border-bottom-right-radius: 10rem;
+
+  //     @include tablet {
+  //     }
+  //   }
+  // }
 }
