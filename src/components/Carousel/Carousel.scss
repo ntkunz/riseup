@@ -4,8 +4,7 @@
 
 .image-carousel {
   max-width: 80rem;
-  // overflow: hidden;
-  //   background-image: url('../../assets/logo/riseup-logo-monochrome.png');
+  overflow: hidden;
   background-image: url('../../assets/logo/riseup-logo-color.png');
   background-position: center;
   background-size: contain;
@@ -17,8 +16,7 @@
     max-width: 100vw;
 
     &--movement {
-      // TWO LINES BELOW ARE FOR IF MOTIONS ARE ENABLED
-      // overflow: hidden;
+      // add animation if motions are enabled
       animation: continuousScroll 90s linear infinite;
     }
 
