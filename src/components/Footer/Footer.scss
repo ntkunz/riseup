@@ -4,14 +4,13 @@
 
 .footer {
   color: white;
-  padding: 3rem 2rem;
+  padding: $section-padding-mobile 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @include tablet {
-    padding: 5rem 2rem;
-  }
-
-  @include desktop {
-    padding: 7rem 2rem;
+    padding: $section-padding-tablet 2rem;
   }
 
   &__details {
@@ -21,8 +20,12 @@
   &__social {
     &-container {
       display: flex;
-      justify-content: space-around;
-      padding: 3rem 0;
+      padding: $section-padding-mobile 0;
+      max-width: 32rem;
+
+      @include tablet {
+        padding: $section-padding-tablet 0;
+      }
     }
 
     &-link {
@@ -38,5 +41,6 @@
 
 .social-icon {
   height: 3rem;
-  width: fit-content;
+  width: auto;
+  padding: 0 1rem;
 }

@@ -21,10 +21,10 @@ export default function Carousel() {
          src: "/images/riseup-marketplace-pacman-1.jpg",
          alt: "riseup marketplace pacman machine and plants"
       },
-      {
-         src: "/images/roger-with-ting.JPG",
-         alt: "riseup marketplace owner Roger with Ting drink"
-      },
+      // {
+      //    src: "/images/roger-with-ting.JPG",
+      //    alt: "riseup marketplace owner Roger with Ting drink"
+      // },
       {
          src: "/images/riseup-mug.JPG",
          alt: "riseup marketplace custom coffee mug to-go container"
