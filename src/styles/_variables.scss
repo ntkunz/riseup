@@ -1,4 +1,4 @@
-@use './_mixins.scss' as mixins;
+@use './mixins.scss' as *;
 
 $red-light: #ad2922;
 $red-light-rgb: rgb(173, 41, 34);
@@ -34,6 +34,10 @@ $multi-color-shadow: 0.05rem 0.05rem 0.1rem $black-light,
   0.1rem 0.1rem 0.05rem $red-light, 0.2rem 0.2rem 0.05em $green-light;
 
 $carousel-image-width: 60vw;
-// @include mixins.tablet {
-//   $carousel-image-width: 80vw;
-// }
+@include tablet {
+  $carousel-image-width: 22rem;
+}
+
+@include desktop {
+  $carousel-image-width: 30rem;
+}

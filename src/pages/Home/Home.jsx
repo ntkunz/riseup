@@ -1,7 +1,7 @@
 import "./Home.scss";
 import Header from "../../components/Header/Header";
 import MainLogo from "../../components/MainLogo/MainLogo";
-import Tagline from "../../components/Tagline/Tagline";
+// import Tagline from "../../components/Tagline/Tagline";
 import PhotoGallery from "../../components/PhotoGallery/PhotoGallery"
 import Menu from "../../components/Menu/Menu";
 import Carousel from "../../components/Carousel/Carousel";
