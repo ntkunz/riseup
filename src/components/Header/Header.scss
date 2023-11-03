@@ -12,51 +12,45 @@
   // max-height: 24rem;
   position: relative;
 
+  &__text-container {
+    background-color: rgba($black-dark-rgb, 0.25);
+    color: $yellow-light;
+    text-shadow: 0.05rem 0.05rem 0.1em $red-light;
+    padding: calc(1vw + 0.7rem);
+    container-type: inline-size;
+  }
+
   &__title {
+    font-family: alumni-sans, 'Gill Sans', 'Gill Sans MT', Calibri;
+    // font-size: 2.5rem;
   }
 
   &__image {
-    width: 100vw;
     //dim the brightness of hte image some
     filter: brightness(85%);
+    width: 100%;
   }
 
   &__details {
     text-align: center;
     margin: 0;
-    font-size: 1rem;
+    // font-size: 1rem;
     letter-spacing: 0.1rem;
+    // font-size: clamp(1rem, 0.84rem + 0.855vw, 1.25rem);
 
     @include tablet {
-      font-size: 1.25rem;
+      // width: fit-content;
+      // padding: calc(1vw + 0.7rem) 3rem calc(1vw + 0.7rem) 1rem;
+      // font-size: clamp(1.25rem, 0.875rem + 0.781vw, 1.5rem);
     }
 
-    @include desktop {
-      font-size: 2.5rem;
-    }
+    // @include tablet {
+    //   font-size: 1.25rem;
+    // }
 
-    &-container {
-      // margin-top: -5rem;
-      background-color: rgba($black-dark-rgb, 0.9);
-      color: $yellow-light;
-      text-shadow: 0.05rem 0.05rem 0.1em $red-light;
-      padding: calc(1vw + 0.7rem);
-      font-size: clamp(0.563rem, 0.066rem + 1.324vw, 1.125rem);
-
-      @include tablet {
-        width: fit-content;
-        padding: calc(1vw + 0.7rem) 3rem calc(1vw + 0.7rem) 1rem;
-        font-size: clamp(0.563rem, 0.066rem + 1.324vw, 1.125rem);
-        border-bottom-right-radius: 10rem;
-      }
-
-      // @include desktop {
-      //   position: absolute;
-      //   margin-top: 0rem;
-      //   top: 0;
-      //   left: 0;
-      // }
-    }
+    // @include desktop {
+    //   font-size: 1.5rem;
+    // }
   }
 
   // &__details {

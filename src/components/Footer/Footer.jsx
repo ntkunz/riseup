@@ -7,12 +7,14 @@ export default function Footer() {
    return (
       <div className="footer">
 
+         <h3 className="footer__details">Making Community Convenient</h3>
+
          <div className="footer__store-details">
-            <p className="footer__details">704 Vernon Dr, Vancouver, BC</p>
-            <p className="footer__details">Mon - Fri 9-6 , Sat 10-4</p>
+            <h4 className="footer__details">704 Vernon Dr, Vancouver, BC</h4>
+            <h4 className="footer__details">Mon - Fri 9-6 , Sat 10-4</h4>
          </div>
 
-         <h3 className="footer__details">Making Community Convenient</h3>
+
 
          <div className="footer__social-container">
             <a className="footer__social-link" target="_blank" rel="noreferrer" href="https://www.facebook.com/riseupmarketplace/">

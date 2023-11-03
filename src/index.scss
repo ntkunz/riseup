@@ -28,33 +28,40 @@ html {
 :root {
   background-color: $black-dark;
   font-family: quicksand, Avenir, Helvetica, sans-serif;
-  letter-spacing: 0.5vw;
+  // letter-spacing: 0.5vw;
   line-height: 1.5;
   text-align: center;
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 80rem;
   overflow-x: hidden;
 }
 
 body {
-  // background: linear-gradient(
-  //   rgba($red-dark-rgb, 0.5) 10%,
-  //   rgba($red-light-rgb, 0.5) 25%,
-  //   rgba($green-light-rgb, 0.5) 35%,
-  //   rgba($green-dark-rgb, 0.5) 45%,
-  //   rgba($yellow-light-rgb, 0.5) 60%,
-  //   rgba($yellow-dark-rgb, 0.5) 75%,
-  //   rgba($red-dark-rgb, 0.5) 95%
-  // );
   background: linear-gradient(
-    rgba($red-dark-rgb, 0.3) 10%,
-    rgba($red-light-rgb, 0.3) 25%,
-    rgba($yellow-light-rgb, 0.3) 30%,
-    rgba($yellow-dark-rgb, 0.3) 45%,
-    rgba($green-light-rgb, 0.3) 50%,
-    rgba($green-dark-rgb, 0.3) 65%,
-    rgba($black-dark-rgb, 0.3) 95%
+    rgba($red-dark-rgb, 0.7) 10%,
+    rgba($red-light-rgb, 0.7) 25%,
+    rgba($yellow-light-rgb, 0.7) 30%,
+    rgba($yellow-dark-rgb, 0.7) 45%,
+    rgba($green-light-rgb, 0.7) 50%,
+    rgba($green-dark-rgb, 0.7) 65%,
+    rgba($black-dark-rgb, 0.7) 95%
   );
+}
+
+h1 {
+  font-size: $font-size-large;
+}
+
+h2 {
+  font-size: $font-size-extra-large;
+}
+
+h3 {
+  font-size: $font-size-small;
+}
+h4 {
+  font-size: $font-size-medium;
+  font-weight: normal;
 }
 
 h4,
@@ -66,7 +73,10 @@ p {
 }
 
 p {
-  letter-spacing: 0.1vw;
+  // letter-spacing: 0.1vw;
+  // line-height: 1.5;
+  font-size: $font-size-small;
+  letter-spacing: 1px;
 }
 
 // ::-webkit-scrollbar {

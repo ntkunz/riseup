@@ -3,30 +3,16 @@
 @use '../../styles/global.scss' as *;
 
 .tagline {
-  padding: 3rem 0;
-
-  @include tablet {
-    padding: 5rem 0;
-  }
-
-  @include desktop {
-    padding: 7rem 0;
-  }
-
   &__text {
-    position: relative;
+    padding: $section-padding-mobile 0;
     font-family: alumni-sans, 'Gill Sans', 'Gill Sans MT', Calibri,
       'Trebuchet MS', sans-serif;
     letter-spacing: 0.125rem;
     color: $yellow-light;
     text-shadow: $multi-color-shadow;
-    font-size: 2rem;
-    font-weight: 700;
-    z-index: 3;
 
     @include tablet {
-      font-size: 3rem;
-      letter-spacing: 0.5rem;
+      padding: $section-padding-tablet 0;
     }
   }
 }

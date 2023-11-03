@@ -7,13 +7,13 @@ export default function Menu() {
 
    return (
       <section className="menu">
-         <h3 className="menu__title">MENU</h3>
+         <h2 className="menu__title">MENU</h2>
 
          <div className="menu__container">
             <div className="menu__navbar">
-               <button className={menu === 'food' ? 'menu__button active' : 'menu__button'} onClick={() => setMenu('food')}>Food</button>
-               <button className={menu === 'drinks' ? 'menu__button active' : 'menu__button'} onClick={() => setMenu('drinks')}>Drinks</button>
-               <button className={menu === 'baked' ? 'menu__button active' : 'menu__button'} onClick={() => setMenu('baked')}>Baked</button>
+               <button className={menu === 'food' ? 'menu__button active' : 'menu__button'} onClick={() => setMenu('food')}><h4>Food</h4></button>
+               <button className={menu === 'drinks' ? 'menu__button active' : 'menu__button'} onClick={() => setMenu('drinks')}><h4>Drinks</h4></button>
+               <button className={menu === 'baked' ? 'menu__button active' : 'menu__button'} onClick={() => setMenu('baked')}><h4>Baked</h4></button>
             </div>
 
             {menu === 'food' && <div className="menu__food">
@@ -25,7 +25,6 @@ export default function Menu() {
                   </div>
                   <p className="menu__item-description">House marinated jerk chicken and a mango or kale coleslaw on a rosemary sourdough bread, served with plantain chips.</p>
                </div>
-
                <div className="menu__item-container">
                   <div className="menu__item-header">
                      <h3 className="menu__item-title">Sloppy George Sandwich</h3>

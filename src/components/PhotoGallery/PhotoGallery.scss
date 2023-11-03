@@ -19,7 +19,13 @@
 
   &__image {
     border: 0.5rem solid $white-light;
-    border-image: linear-gradient(335deg, $red-light, $green-light) 1;
+    border-image: linear-gradient(
+        335deg,
+        $red-light,
+        $yellow-light,
+        $green-light
+      )
+      1;
     width: 80vw;
     flex-grow: 1;
 

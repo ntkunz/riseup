@@ -3,16 +3,19 @@
 @use '../../styles/global' as *;
 
 .menu {
-  padding: $section-padding-mobile 2rem;
+  padding: $section-padding-mobile 0.5rem;
+  container-type: inline-size;
 
   @include tablet {
-    padding: $section-padding-tablet 2rem;
+    padding: $section-padding-tablet 0.5rem;
   }
 
   &__title {
     text-align: center;
     padding-bottom: 2rem;
-    font-size: 3rem;
+    // font-size: 3rem;
+
+    // font-size: $font-size-extra-large;
     color: $yellow-light;
     text-shadow: $multi-color-shadow;
   }
@@ -32,19 +35,31 @@
   }
 
   &__button {
+    // font-size: 1.25rem;
+    // font-size: $font-size-medium;
     border: none;
     border-bottom: $yellow-dark;
-    color: $white-dark;
-    text-shadow: 0.05rem 0.05rem 0.05em $black-dark;
+    // color: $white-dark;
+    // text-shadow: 0.05rem 0.05rem 0.05em $black-dark;
+    // text-shadow: 0.05rem 0.05rem 0.05em $yellow-light;
+    text-shadow: 1px 1px 2px $white-light, 0 0 0.25em $yellow-light,
+      0 0 1em $white-dark;
     background-color: $yellow-dark;
-    letter-spacing: 0.125rem;
+    // letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
     width: 100%;
     padding: 0.5rem 0;
     font-family: alumni-sans, Avenir, Helvetica, sans-serif;
-    transition: color ease-in-out 0.125s;
+    transition: color ease-in-out 0.25s;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    // container-type: inline-size;
+
+    //testing since the not last child below isn't working
+    // border-right: 1px solid black;
 
     @include tablet {
-      font-size: 1.5rem;
+      // font-size: 1.75rem;
     }
 
     &:not(:last-child) {
@@ -55,6 +70,8 @@
       cursor: pointer;
       background: linear-gradient($yellow-light, rgba($yellow-light, 0.75));
       color: $white-light;
+      text-shadow: 1px 1px 2px $green-dark, 0 0 0.5em $black-dark,
+        0 0 1em $yellow-dark;
     }
   }
 
@@ -62,6 +79,13 @@
     font-weight: bold;
     background: linear-gradient($yellow-dark, $yellow-light 20%);
     border-bottom: $yellow-light;
+    text-decoration: none;
+
+    & h4 {
+      font-weight: bold;
+      // color: $green-dark;
+      // text-decoration: underline;
+    }
   }
 
   &__item-container {
@@ -88,14 +112,17 @@
 
   &__item-price {
     margin-right: 1rem;
-    background-color: rgba($green-light-rgb, 0.5);
+    color: $black-light;
+    letter-spacing: 0.1rem;
+    background-color: rgba($white-dark-rgb, 0.25);
     padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
   }
 
   &__item-description {
     text-align: left;
     color: $black-dark;
     margin: 0.25rem;
-    font-size: 1.2rem;
+    // font-size: 1.2rem;
   }
 }
