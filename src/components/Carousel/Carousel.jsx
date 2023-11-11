@@ -21,10 +21,10 @@ export default function Carousel() {
          src: "/images/riseup-marketplace-pacman-1.jpg",
          alt: "riseup marketplace pacman machine and plants"
       },
-      // {
-      //    src: "/images/roger-with-ting.JPG",
-      //    alt: "riseup marketplace owner Roger with Ting drink"
-      // },
+      {
+         src: "/images/roger-with-ting.JPG",
+         alt: "riseup marketplace owner Roger with Ting drink"
+      },
       {
          src: "/images/riseup-mug.JPG",
          alt: "riseup marketplace custom coffee mug to-go container"
@@ -36,11 +36,11 @@ export default function Carousel() {
       {
          src: "/images/riseup-marketplace-dog-2.JPG",
          alt: "riseup marketplace entrance with local bulldog"
-      },
-      {
-         src: "/images/snickerdoodles-in-case-1.JPG",
-         alt: "riseup marketplace freshly baked snickerdoodles in display case"
       }
+      // {
+      //    src: "/images/snickerdoodles-in-case-1.JPG",
+      //    alt: "riseup marketplace freshly baked snickerdoodles in display case"
+      // }
    ];
 
    const duplicatedImages = carouselImages.map((image) => {

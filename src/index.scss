@@ -36,15 +36,27 @@ html {
   overflow-x: hidden;
 }
 
+// body {
+//   background: linear-gradient(
+//     rgba($red-dark-rgb, 0.7) 10%,
+//     rgba($red-light-rgb, 0.7) 25%,
+//     rgba($yellow-light-rgb, 0.7) 30%,
+//     rgba($yellow-dark-rgb, 0.7) 45%,
+//     rgba($green-light-rgb, 0.7) 50%,
+//     rgba($green-dark-rgb, 0.7) 65%,
+//     rgba($black-dark-rgb, 0.7) 95%
+//   );
+// }
+
 body {
   background: linear-gradient(
-    rgba($red-dark-rgb, 0.7) 10%,
-    rgba($red-light-rgb, 0.7) 25%,
-    rgba($yellow-light-rgb, 0.7) 30%,
-    rgba($yellow-dark-rgb, 0.7) 45%,
-    rgba($green-light-rgb, 0.7) 50%,
-    rgba($green-dark-rgb, 0.7) 65%,
-    rgba($black-dark-rgb, 0.7) 95%
+    rgba($red-dark, 0.7) 10%,
+    rgba($red-light, 0.7) 25%,
+    rgba($yellow-light, 0.7) 30%,
+    rgba($yellow-dark, 0.7) 45%,
+    rgba($green-light, 0.7) 50%,
+    rgba($green-dark, 0.7) 65%,
+    rgba($black-dark, 0.7) 95%
   );
 }
 

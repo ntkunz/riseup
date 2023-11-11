@@ -1,22 +1,39 @@
 import "./Menu.scss";
-import { useState } from "react";
+import menuData from '../../assets/data/menuData.js';
+import MenuCategory from "../MenuCategory/MenuCategory";
+// import { useState } from "react";
 
 export default function Menu() {
 
-   const [menu, setMenu] = useState('food');
+   // const [menu, setMenu] = useState('food');
+
+   // console.log('menuData: ', menuData);
 
    return (
       <section className="menu">
          <h2 className="menu__title">MENU</h2>
 
-         <div className="menu__container">
-            <div className="menu__navbar">
+         {menuData.map((menuSection) => (
+            <div key={menuSection.category} >
+               <h3 className="menu__subtitle">{menuSection.category}</h3>
+               <div className="menu__item-container">
+                  <MenuCategory menuSectionItems={menuSection.items} />
+               </div>
+            </div>
+         ))}
+
+
+
+
+
+
+         {/* <div className="menu__navbar">
                <button className={menu === 'food' ? 'menu__button active' : 'menu__button'} onClick={() => setMenu('food')}><h4>Food</h4></button>
                <button className={menu === 'drinks' ? 'menu__button active' : 'menu__button'} onClick={() => setMenu('drinks')}><h4>Drinks</h4></button>
                <button className={menu === 'baked' ? 'menu__button active' : 'menu__button'} onClick={() => setMenu('baked')}><h4>Baked</h4></button>
-            </div>
+            </div> */}
 
-            {menu === 'food' && <div className="menu__food">
+         {/* {menu === 'food' && <div className="menu__food">
 
                <div className="menu__item-container">
                   <div className="menu__item-header">
@@ -145,8 +162,8 @@ export default function Menu() {
                   <p className="menu__item-description">Freshly in-house baked bread (when available)</p>
                </div>
 
-            </div>}
-         </div>
+            </div>} */}
+         {/* </div> */}
       </section>
    )
 }

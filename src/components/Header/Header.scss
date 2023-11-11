@@ -13,7 +13,8 @@
   position: relative;
 
   &__text-container {
-    background-color: rgba($black-dark-rgb, 0.25);
+    // background-color: rgba($black-dark-rgb, 0.25);
+    background-color: rgba($black-dark, 0.25);
     color: $yellow-light;
     text-shadow: 0.05rem 0.05rem 0.1em $red-light;
     padding: calc(1vw + 0.7rem);
