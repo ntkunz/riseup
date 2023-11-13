@@ -7,7 +7,11 @@
   letter-spacing: 0.125rem;
 
   &__text-container {
-    // background-color: rgba($black-dark, 0.25);
+    background: linear-gradient(
+      180deg,
+      rgba($black-dark, 1),
+      rgba($black-dark, 0)
+    );
     color: $yellow-light;
     text-shadow: 0.05rem 0.05rem 0.1em $red-light;
     padding: calc(1vw + 0.7rem);
@@ -16,9 +20,7 @@
     @include tablet {
       position: relative;
       z-index: 1;
-      // height: 10rem;
-      // padding: 4rem;
-      padding: 1rem 3.25rem;
+      padding: 1rem 4rem;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
@@ -34,35 +36,9 @@
 
     @include tablet {
       padding: 0;
-      // padding: 1rem;
-      // padding: 0;
       margin-bottom: -8.5rem;
-      // position: absolute;
-      // right: 40vw;
-      // top: 0;
-      // z-index: 1;
-      // height: 15rem;
       width: auto;
     }
-    // position: absolute;
-    // bottom: -2rem;
-    // right: 3rem;
-    // bottom: -6rem;
-    // left: 30%;
-    // width: 45vw;
-    // max-width: 26rem;
-    // z-index: 1;
-
-    // @include tablet {
-    //   top: 0rem;
-    // }
-
-    // @include desktop {
-    //   bottom: 0rem;
-    //   scale: 0.75;
-    //   left: 0rem;
-    //   transform: translate(145%, 45%);
-    // }
   }
 
   &__title {
