@@ -1,38 +1,5 @@
 @use './mixins.scss' as *;
 
-// $red-light: #ad2922;
-// $red-light-rgb: rgb(173, 41, 34);
-
-// $red-dark: #771f1a;
-// $red-dark-rgb: rgb(119, 31, 26);
-
-// $yellow-light: #f0bd2e;
-// $yellow-light-rgb: rgb(240, 189, 46);
-
-// $yellow-dark: #b19030;
-// $yellow-dark-rgb: rgb(177, 144, 48);
-
-// $green-light: #118142;
-// $green-light-rgb: rgb(17, 129, 66);
-
-// $green-dark: #00481f;
-// $green-dark-rgb: rgb(0, 72, 31);
-
-// $black-light: #313131;
-// $black-light-rgb: rgb(49, 49, 49);
-
-// $black-dark: #0a0a0a;
-// $black-dark-rgb: rgb(10, 10, 10);
-
-// $white-light: #fff;
-// $white-light-rgb: rgb(255, 255, 255);
-
-// $white-dark: #e6e6e6;
-// $white-dark-rgb: rgb(230, 230, 230);
-
-// $multi-color-shadow: 0.05rem 0.05rem 0.1rem $black-light,
-//   0.1rem 0.1rem 0.05rem $red-light, 0.2rem 0.2rem 0.05em $green-light;
-
 $red-light: hsl(2, 67%, 42%);
 $red-dark: hsl(2, 64%, 30%);
 
@@ -42,7 +9,7 @@ $yellow-dark: hsl(48, 59%, 41%);
 $green-light: hsl(148, 77%, 29%);
 $green-dark: hsl(148, 100%, 14%);
 
-$black-light: hsl(0, 0%, 19%);
+$black-light: hsl(0, 0%, 10%);
 $black-dark: hsl(0, 0%, 4%);
 
 $white-light: hsl(0, 0%, 100%);
@@ -51,14 +18,10 @@ $white-dark: hsl(0, 0%, 90%);
 $multi-color-shadow: 0.05rem 0.05rem 0.1rem $black-light,
   0.1rem 0.1rem 0.05rem $red-light, 0.2rem 0.2rem 0.05em $green-light;
 
-// $carousel-image-width: clamp(12.5rem, 60vw, 50rem);
 $carousel-image-width: 50vw;
 $carousel-image-width-desktop: 25rem;
 
 $carousel-loop-duration: 90s;
-// $carousel-image-width-mobile: 60vw;
-// $carousel-image-width-tablet: 22rem;
-// $carousel-image-width-desktop: 30rem;
 
 $section-padding-mobile: 2rem;
 $section-padding-tablet: 4rem;
@@ -67,14 +30,3 @@ $font-size-extra-large: clamp(3rem, 12cqi, 6rem);
 $font-size-large: clamp(2rem, 8cqi, 4rem);
 $font-size-medium: clamp(1.25rem, 6cqi, 2rem);
 $font-size-small: clamp(1rem, 4cqi, 1.25rem);
-
-// @include tablet {
-// @media (min-width: 768px) {
-//   $carousel-image-width: 22rem;
-//   $section-padding: 3rem 0;
-// }
-
-// @include desktop {
-//   $carousel-image-width: 30rem;
-//   $section-padding: 4rem 0;
-// }

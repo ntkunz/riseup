@@ -3,18 +3,33 @@
 @use '../../styles/global' as *;
 
 .footer {
-  color: white;
   padding: $section-padding-mobile 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $black-dark;
 
   @include tablet {
     padding: $section-padding-tablet 2rem;
   }
 
+  &__phrase {
+    color: $yellow-dark;
+  }
+
   &__details {
-    // font-size: clamp(1.25rem, 3vw, 1.5rem);
+    color: $green-light;
+  }
+
+  &__contact-link {
+    color: $red-dark;
+    text-underline-offset: 0.2em;
+
+    &:hover {
+      cursor: pointer;
+      color: $red-light;
+      text-shadow: $green-dark 0 0 0.75rem;
+    }
   }
 
   &__social {
@@ -34,6 +49,7 @@
       &:hover {
         transform: scale(1.1);
         cursor: pointer;
+        filter: drop-shadow(0 0 0.75rem $yellow-dark);
       }
     }
   }

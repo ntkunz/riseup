@@ -108,7 +108,7 @@ const menuData = [
       {
         title: "Bread Loaf",
         price: "",
-        description: "Freshly in-house baked bread (when available)",
+        description: "Freshly baked bread (when available)",
         image: "./images/products/RiseUpMarketplace-BreadLoaves.jpg",
       },
     ],

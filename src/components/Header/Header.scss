@@ -3,78 +3,39 @@
 @use '../../styles/global.scss' as *;
 
 .header {
-  // margin-top: 5rem;
-  // width: 100%;
-  // background-image: url('../../assets/images/riseup-marketplace-front-view.jpg');
-  // background-size: cover;
-  // background-position: top;
-  // aspect-ratio: 16 / 9;
-  // max-height: 24rem;
   position: relative;
+  letter-spacing: 0.125rem;
 
   &__text-container {
-    // background-color: rgba($black-dark-rgb, 0.25);
     background-color: rgba($black-dark, 0.25);
     color: $yellow-light;
     text-shadow: 0.05rem 0.05rem 0.1em $red-light;
     padding: calc(1vw + 0.7rem);
     container-type: inline-size;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__title {
     font-family: alumni-sans, 'Gill Sans', 'Gill Sans MT', Calibri;
-    // font-size: 2.5rem;
   }
 
   &__image {
-    //dim the brightness of hte image some
     filter: brightness(85%);
     width: 100%;
+    max-height: 35rem;
+    object-fit: cover;
+    object-position: top;
   }
 
   &__details {
     text-align: center;
     margin: 0;
-    // font-size: 1rem;
     letter-spacing: 0.1rem;
-    // font-size: clamp(1rem, 0.84rem + 0.855vw, 1.25rem);
-
-    @include tablet {
-      // width: fit-content;
-      // padding: calc(1vw + 0.7rem) 3rem calc(1vw + 0.7rem) 1rem;
-      // font-size: clamp(1.25rem, 0.875rem + 0.781vw, 1.5rem);
-    }
-
-    // @include tablet {
-    //   font-size: 1.25rem;
-    // }
-
-    // @include desktop {
-    //   font-size: 1.5rem;
-    // }
+    padding-bottom: 0.5rem;
   }
-
-  // &__details {
-  //   text-align: left;
-  //   margin: 0;
-  //   font-size: 1rem;
-  //   @include tablet {
-  //     font-size: 1.5rem;
-  //   }
-
-  //   &-container {
-  //     margin-top: -5rem;
-  //     margin-bottom: 7rem;
-  //     width: fit-content;
-  //     background-color: rgba($black-dark-rgb, 0.9);
-  //     color: $yellow-light;
-  //     text-shadow: 0.05rem 0.05rem 0.1em $red-light;
-  //     padding: calc(1vw + 0.7rem);
-  //     font-size: clamp(0.563rem, 0.066rem + 1.324vw, 1.125rem);
-  //     border-bottom-right-radius: 10rem;
-
-  //     @include tablet {
-  //     }
-  //   }
-  // }
 }

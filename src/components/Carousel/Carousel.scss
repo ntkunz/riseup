@@ -5,10 +5,10 @@
 .image-carousel {
   max-width: 80rem;
   overflow: hidden;
-  // background-image: url('../../assets/logo/riseup-logo-color.png');
-  background-image: url('../../assets/logo/riseup-logo-monochrome.png');
+  // background-image: url('../../assets/logo/riseup-logo-monochrome.png');
+  background-image: url('../../assets/logo/riseup-logo-color.png');
   background-position: center;
-  background-size: contain;
+  background-repeat: no-repeat;
   padding: $section-padding-mobile 0;
   margin: 0 auto;
 
@@ -36,18 +36,15 @@
       flex-wrap: wrap;
       justify-content: center;
       background-color: rgba($black-dark, 0.9);
-      // background-color: rgba($black-dark-rgb, 0.9);
     }
   }
 
   &__image {
     width: $carousel-image-width;
     border: 1rem solid rgba($green-dark, 0);
-    // border: 1rem solid rgba($green-dark-rgb, 0);
 
     @include tablet {
       border: 3rem solid rgba($green-dark, 0);
-      // border: 3rem solid rgba($green-dark-rgb, 0);
     }
 
     @include desktop {

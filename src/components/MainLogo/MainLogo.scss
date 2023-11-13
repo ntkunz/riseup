@@ -8,18 +8,17 @@
 .riseup-logo-4 {
   position: absolute;
   bottom: 0;
-  // top: 8rem;
-  // top: 12rem;
   right: 0rem;
-  // transform: rotate(16deg);
   width: 45vw;
   max-width: 26rem;
   z-index: 1;
 
-  // @include tablet {
-  //   top: 0rem;
-  //   right: 2rem;
-  // }
+  @include desktop {
+    bottom: 0rem;
+    scale: 0.75;
+    left: 0rem;
+    transform: translate(140%, 50%);
+  }
 }
 
 .riseup-logo-2 {
@@ -30,13 +29,9 @@
 .riseup-logo-3 {
   -webkit-filter: drop-shadow(0 0 0.125rem $white-dark);
   filter: drop-shadow(0 0 0.125rem $white-dark);
-  // -webkit-filter: drop-shadow(0.01px 0.01px 0 $white-dark);
-  // filter: drop-shadow(0.01px 0.01px 0 $white-dark);
 }
 
 .riseup-logo-4 {
-  // -webkit-filter: blur(0.625rem);
-  // filter: blur(0.625rem);
   -webkit-filter: drop-shadow(0 0 0.75rem $white-dark);
   filter: drop-shadow(0 0 0.75rem $white-dark);
 }

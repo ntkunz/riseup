@@ -1,7 +1,6 @@
 export default function MenuCategory(menuSectionItems) {
 
    return (
-      // component to be returned here
       <>
          {menuSectionItems.menuSectionItems.map((item, index) => (
             <div className="menu__category" key={index}>
@@ -12,7 +11,6 @@ export default function MenuCategory(menuSectionItems) {
                {item.image &&
                   <img src={item.image} className="menu__image" alt={`Menu item ${item.title} from riseup marketplace`} />
                }
-               {/* <p className="menu__item-description">{item.description}</p> */}
                <p className="menu__item-description" dangerouslySetInnerHTML={{ __html: item.description }}></p>
             </div>
          ))}
