@@ -14,7 +14,7 @@
   }
 
   &__phrase {
-    color: $yellow-dark;
+    color: $yellow-light;
   }
 
   &__details {
@@ -22,12 +22,12 @@
   }
 
   &__contact-link {
-    color: $red-dark;
+    color: $red-light;
     text-underline-offset: 0.2em;
 
     &:hover {
       cursor: pointer;
-      color: $red-light;
+      // color: $red-dark;
       text-shadow: $green-dark 0 0 0.75rem;
     }
   }
