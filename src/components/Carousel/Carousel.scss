@@ -24,7 +24,11 @@
 
     &--movement {
       // add animation if motions are enabled
-      animation: continuousScroll 90s linear infinite;
+      animation: continuousScroll $carousel-loop-duration linear infinite;
+      @include desktop {
+        animation: continuousScrollDesktop $carousel-loop-duration linear
+          infinite;
+      }
     }
 
     &--no-movement {
@@ -45,6 +49,10 @@
       border: 3rem solid rgba($green-dark, 0);
       // border: 3rem solid rgba($green-dark-rgb, 0);
     }
+
+    @include desktop {
+      width: $carousel-image-width-desktop;
+    }
   }
 }
 
@@ -54,5 +62,14 @@
   }
   100% {
     transform: translateX(calc(-#{$carousel-image-width} * 8));
+  }
+}
+
+@keyframes continuousScrollDesktop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-#{$carousel-image-width-desktop} * 8));
   }
 }

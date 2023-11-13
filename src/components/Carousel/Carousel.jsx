@@ -37,10 +37,6 @@ export default function Carousel() {
          src: "/images/riseup-marketplace-dog-2.JPG",
          alt: "riseup marketplace entrance with local bulldog"
       }
-      // {
-      //    src: "/images/snickerdoodles-in-case-1.JPG",
-      //    alt: "riseup marketplace freshly baked snickerdoodles in display case"
-      // }
    ];
 
    const duplicatedImages = carouselImages.map((image) => {
