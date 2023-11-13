@@ -94,10 +94,13 @@ const menuData = [
         title: "Coco Bun",
         price: "$2.75",
         description:
-          "The perfect compliment to your patty! Warm and toasty, with a light hint of Kula Kitchen red pepper sauce to bring you back to the island!<br><br><b>Image is of a Jamaican Patty inside Coco Bun, Jamaican Patty not included in price</b>",
+          // "The perfect compliment to your patty! Warm and toasty, with a light hint of Kula Kitchen red pepper sauce to bring you back to the island!<br><br><i>*Image is of a Jamaican Patty inside Coco Bun, Jamaican Patty not included in price</i>",
+          "The perfect compliment to your patty! Warm and toasty, with a light hint of Kula Kitchen red pepper sauce to bring you back to the island!",
 
         image:
           "./images/products/RiseUpMarketplace_JamaicanPattyAndCocoBun.jpg",
+        disclaimer:
+          "*Image of Jamaican Patty inside Coco Bun. Jamaican Patty not included in Coco Bun price, but a great combination!",
       },
       {
         title: "Cookies",

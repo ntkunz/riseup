@@ -7,8 +7,8 @@
 .riseup-logo-3,
 .riseup-logo-4 {
   position: absolute;
-  bottom: 0;
-  right: 0rem;
+  bottom: -2rem;
+  right: 3rem;
   width: 45vw;
   max-width: 26rem;
   z-index: 1;
@@ -17,21 +17,26 @@
     bottom: 0rem;
     scale: 0.75;
     left: 0rem;
-    transform: translate(140%, 50%);
+    transform: translate(145%, 45%);
   }
 }
 
-.riseup-logo-2 {
-  -webkit-filter: drop-shadow(1.5px 1.5px 0 $white-dark);
-  filter: drop-shadow(1.5px 1.5px 0 $white-dark);
+.riseup-logo {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 
-.riseup-logo-3 {
-  -webkit-filter: drop-shadow(0 0 0.125rem $white-dark);
-  filter: drop-shadow(0 0 0.125rem $white-dark);
-}
+// .riseup-logo-2 {
+//   -webkit-filter: drop-shadow(1.5px 1.5px 0 $white-dark);
+//   filter: drop-shadow(1.5px 1.5px 0 $white-dark);
+// }
+
+// .riseup-logo-3 {
+//   -webkit-filter: drop-shadow(0 0 0.125rem $white-dark);
+//   filter: drop-shadow(0 0 0.125rem $white-dark);
+// }
 
 .riseup-logo-4 {
-  -webkit-filter: drop-shadow(0 0 0.75rem $white-dark);
-  filter: drop-shadow(0 0 0.75rem $white-dark);
+  -webkit-filter: drop-shadow(0 0 0.05rem $black-dark);
+  filter: drop-shadow(0 0 0.05rem $black-dark);
 }

@@ -98,4 +98,12 @@
     text-shadow: black;
     line-height: normal;
   }
+
+  &__item-disclaimer {
+    color: $white-dark;
+    font-size: 1rem;
+    @include tablet {
+      order: 3;
+    }
+  }
 }
