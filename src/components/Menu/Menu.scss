@@ -8,7 +8,10 @@
   container-type: inline-size;
 
   &__item-container {
-    border-bottom: $red-dark solid 0.25rem;
+    border-bottom: rgba($black-light, 0.75) solid 0.25rem;
+    border-top: rgba($black-light, 0.75) solid 0.25rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
 
     @include tablet {
       display: flex;
@@ -25,22 +28,17 @@
 
   &__subtitle {
     font-size: $font-size-medium;
-    color: $black-dark;
-    text-shadow: $multi-color-shadow;
-    filter: drop-shadow(0px 1px 5px $white-dark)
-      drop-shadow(-1px -1px 5px $white-dark);
+    font-weight: normal;
+    color: $yellow-light;
     @include tablet {
       text-align: left;
     }
   }
 
   &__category {
-    border-top: $yellow-light solid 0.25rem;
-    margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 0.5rem;
-    // still unsure if I want to make each category box-shadowed so leaving in
-    // box-shadow: $yellow-dark 0.0625rem 0.0625rem 0.2rem;
+    margin-bottom: 2rem;
 
     @include tablet {
       text-align: left;
@@ -48,7 +46,7 @@
       flex-direction: column;
       width: 48%;
       flex-grow: 1;
-      margin-bottom: 0;
+      // margin-bottom: 0;
     }
 
     @include desktop {
@@ -84,8 +82,10 @@
 
   &__item-title {
     color: $white-dark;
+    text-shadow: 0.05rem 0.05rem 0.1rem $black-light;
     font-weight: 700;
     letter-spacing: 0.125rem;
+    line-height: 2.5rem;
   }
 
   &__item-price {
@@ -95,7 +95,9 @@
 
   &__item-description {
     color: $white-dark;
-    text-shadow: black;
+    // text-shadow: black;
+    // text-shadow: $multi-color-shadow;
+    text-shadow: 0.05rem 0.05rem 0.1rem $black-dark;
     line-height: normal;
   }
 

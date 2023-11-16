@@ -9,8 +9,8 @@ export default function Header() {
             <img src={logoColorPNG} alt="RiseUp Marketplace logo laid over image of the store" className="header__logo" />
             <div className="header__details-container">
 
-               <time className="header__details">Monday - Friday 9-6 , Sat 10-4</time>
-               <address className="header__details">704 Vernon Dr. Vancouver, BC</address>
+               <time className="header__details"><p>Monday - Friday 9-6 , Sat 10-4</p></time>
+               <address className="header__details"><p>704 Vernon Dr. Vancouver, BC</p></address>
             </div>
          </div>
          <img className="header__image" src="/images/riseup-marketplace-front-view.jpg" alt="Photography of the front of Rise Up MarketPlace" />
