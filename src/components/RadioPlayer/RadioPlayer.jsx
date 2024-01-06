@@ -1,3 +1,5 @@
+// TODO: Get streaming radio player working, or just embed a song for people to listen to
+
 import "./RadioPlayer.scss";
 // import recordPlayer from '/logos/record-player.svg';
 

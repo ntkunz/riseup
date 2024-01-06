@@ -1,3 +1,5 @@
+// TODO: Get streaming radio player working, or just embed a song for people to listen to
+
 function runQueue() {
   mytuner_scripts["player-v1.js_queue"].forEach(function (func) {
     func();

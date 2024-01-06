@@ -46,7 +46,6 @@
       flex-direction: column;
       width: 48%;
       flex-grow: 1;
-      // margin-bottom: 0;
     }
 
     @include desktop {
@@ -95,8 +94,6 @@
 
   &__item-description {
     color: $white-dark;
-    // text-shadow: black;
-    // text-shadow: $multi-color-shadow;
     text-shadow: 0.05rem 0.05rem 0.1rem $black-dark;
     line-height: normal;
   }
