@@ -57,5 +57,9 @@
 .social-icon {
   height: 3rem;
   width: auto;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
+
+  @include tablet {
+    padding: 0 2rem;
+  }
 }

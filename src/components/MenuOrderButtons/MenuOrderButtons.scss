@@ -1,0 +1,39 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/global' as *;
+
+.menu-buttons {
+  &__container {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+      gap: 3rem;
+    }
+  }
+
+  &__button {
+    color: $black-dark;
+    text-shadow: $white-light 0.05rem 0.05rem 0.05rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-underline-offset: 0.2em;
+    padding: 0.5rem 1rem;
+    background: radial-gradient(rgba($green-light, 0.7), $yellow-dark);
+    border: $yellow-light solid 0.125rem;
+    border-radius: 0.25rem;
+    height: fit-content;
+
+    @include tablet {
+      padding: 0.5rem 2rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: radial-gradient($green-light, $yellow-light);
+      border: $red-dark solid 0.125rem;
+    }
+  }
+}

@@ -2,6 +2,7 @@ import "./Footer.scss";
 import FacebookIcon from '../IconComponents/FacebookIcon';
 import InstagramIcon from '../IconComponents/InstagramIcon';
 import DoordashIcon from '../IconComponents/DoordashIcon';
+import UbereatsIcon from '../IconComponents/UbereatsIcon';
 
 export default function Footer() {
    return (
@@ -25,6 +26,10 @@ export default function Footer() {
             <a className="footer__social-link" target="_blank" rel="noreferrer"
                href="https://www.doordash.com/en-CA/store/rise-up-marketplace-vancouver-22918403/">
                <DoordashIcon aria-label="Doordash" />
+            </a>
+            <a className="footer__social-link" target="_blank" rel="noreferrer"
+               href="https://www.ubereats.com/ca/store/rise-up-marketplace/9G7-p_r2WNKaDWKF6PCtmw">
+               <UbereatsIcon aria-label="UberEats" />
             </a>
             <a className="footer__social-link" target="_blank" rel="noreferrer"
                href="https://www.instagram.com/riseupmarketplace/?hl=en">

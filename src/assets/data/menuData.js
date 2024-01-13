@@ -6,14 +6,14 @@ const menuData = [
         title: "Jerk Chicken Sandwich",
         price: "$10.50",
         description:
-          "House marinated jerk chicken and a mango or kale coleslaw on a rosemary sourdough bread, served with plantain chips",
+          "House marinated jerk chicken with a tropical slaw on a rosemary sourdough bread, served with plantain chips",
         image: "./images/products/RiseUpMarketplace_JerkChickenSandwich.jpg",
       },
       {
         title: "Sloppy George Sandwich",
         price: "$10",
         description:
-          "Vegan. House made vegan Sloppy Joe mix with a mango or kale coleslaw on a rosemary sourdough bread, served with plantain chips",
+          "Vegan. House made vegan Sloppy Joe mix with tropical slaw on a rosemary sourdough bread, served with plantain chips",
         image:
           "./images/products/RiseUpMarketplace_SloppyGeorgeSandwich_2880x2304.jpg",
       },
@@ -21,14 +21,14 @@ const menuData = [
         title: "Grilled Cheese",
         price: "$10",
         description:
-          "Havarti, Cheddar and Gruyère cheese with Roma tomatoes and seasoning on a rosemary sourdough bread, served with plantain chips",
+          "Three cheese blend with roma tomatoes and seasoning on a rosemary sourdough bread, served with plantain chips",
         image: "./images/products/RiseUpMarketplace_GrilledCheeseSandwich.jpg",
       },
       {
         title: "Rise Up Salad",
         price: "$6.50",
         description:
-          "Mixed greens, cucumbers, strawberries, cranberries, pumpkin seeds and a lemon balsamic dressing",
+          "Mixed greens, cucumbers, strawberries, dried cranberries, pumpkin seeds and a light olive oil and balsamic dressing",
         image: "",
       },
       {
@@ -40,8 +40,35 @@ const menuData = [
       {
         title: "Daily Soup",
         price: "$6.50",
-        description: "A savoury soup of the day provided by Kula Kitchen!",
+        description: "Ask about our daily soup",
         image: "",
+      },
+    ],
+  },
+  {
+    category: "Baked",
+    items: [
+      {
+        title: "Patty & Coco Bun Combo",
+        price: "$7.50",
+        description:
+          // "The perfect compliment to your patty! Warm and toasty, with a light hint of Kula Kitchen red pepper sauce to bring you back to the island!<br><br><i>*Image is of a Jamaican Patty inside Coco Bun, Jamaican Patty not included in price</i>",
+          "The perfect compliment to your patty! Warm and toasty, with a light hint of Kula Kitchen red pepper sauce to bring you back to the island!",
+
+        image:
+          "./images/products/RiseUpMarketplace_JamaicanPattyAndCocoBun.jpg",
+      },
+      {
+        title: "Cookies",
+        price: "$1",
+        description: "Choose from Cherry Vanilla, Chocolate, or Snickerdoodle",
+        image: "./images/products/RiseUpMarketplace_SnickerDoodle.jpg",
+      },
+      {
+        title: "Bread Loaf",
+        price: "",
+        description: "Freshly baked bread (when available)",
+        image: "./images/products/RiseUpMarketplace-BreadLoaves.jpg",
       },
     ],
   },
@@ -49,21 +76,27 @@ const menuData = [
     category: "Drinks",
     items: [
       {
-        title: "Coffee or Hot Cocoa",
+        title: "Ting",
+        price: "$3",
+        description: "Carribbean Ting soda",
+        image: "",
+      },
+      {
+        title: "Coffee",
         price: "$3.75",
-        description: "Freshly made",
+        description: "Freshly made Moja Coffee",
+        image: "",
+      },
+      {
+        title: "Hot Cocoa Tea",
+        price: "$3.75",
+        description: "House made tea with cocoa from Ghana",
         image: "",
       },
       {
         title: "Tea",
         price: "$3.50",
-        description: "Freshly made",
-        image: "",
-      },
-      {
-        title: "Ting",
-        price: "$3",
-        description: "Carribbean Ting soda",
+        description: "Selection of hot teas",
         image: "",
       },
       {
@@ -80,39 +113,16 @@ const menuData = [
         image: "",
       },
       {
-        title: "A&W Root Beer",
+        title: "Orangina",
+        price: "$3",
+        description: "Refreshing Mexican sparkling beverage",
+        image: "",
+      },
+      {
+        title: "Root Beer",
         price: "$3",
         description: "A classic root beer",
         image: "",
-      },
-    ],
-  },
-  {
-    category: "Baked",
-    items: [
-      {
-        title: "Coco Bun",
-        price: "$2.75",
-        description:
-          // "The perfect compliment to your patty! Warm and toasty, with a light hint of Kula Kitchen red pepper sauce to bring you back to the island!<br><br><i>*Image is of a Jamaican Patty inside Coco Bun, Jamaican Patty not included in price</i>",
-          "The perfect compliment to your patty! Warm and toasty, with a light hint of Kula Kitchen red pepper sauce to bring you back to the island!",
-
-        image:
-          "./images/products/RiseUpMarketplace_JamaicanPattyAndCocoBun.jpg",
-        disclaimer:
-          "*Image of Jamaican Patty inside Coco Bun. Jamaican Patty not included in Coco Bun price, but a great combination!",
-      },
-      {
-        title: "Cookies",
-        price: "$1",
-        description: "Choose from Cherry Vanilla, Chocolate, or Snickerdoodle",
-        image: "./images/products/RiseUpMarketplace_SnickerDoodle.jpg",
-      },
-      {
-        title: "Bread Loaf",
-        price: "",
-        description: "Freshly baked bread (when available)",
-        image: "./images/products/RiseUpMarketplace-BreadLoaves.jpg",
       },
     ],
   },

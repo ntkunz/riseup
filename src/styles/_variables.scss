@@ -1,12 +1,12 @@
 @use './mixins.scss' as *;
 
-$red-light: hsl(2, 67%, 42%);
+$red-light: hsl(2, 97%, 38%);
 $red-dark: hsl(2, 64%, 30%);
 
-$yellow-light: hsl(48, 85%, 52%);
-$yellow-dark: hsl(48, 59%, 41%);
+$yellow-light: hsl(48, 98%, 48%);
+$yellow-dark: hsl(48, 89%, 37%);
 
-$green-light: hsl(148, 77%, 29%);
+$green-light: hsl(148, 100%, 28%);
 $green-dark: hsl(148, 100%, 14%);
 
 $black-light: hsl(0, 0%, 10%);
@@ -15,8 +15,8 @@ $black-dark: hsl(0, 0%, 4%);
 $white-light: hsl(0, 0%, 100%);
 $white-dark: hsl(0, 0%, 90%);
 
-$multi-color-shadow: 0.05rem 0.05rem 0.1rem $black-light,
-  0.1rem 0.1rem 0.05rem $red-light, 0.2rem 0.2rem 0.05em $green-light;
+$multi-color-shadow: 0.05rem 0.05rem 0.1rem $yellow-light,
+  0.075rem 0.075rem 0.05rem $red-light, 0.1rem 0.1rem 0.05em $green-light;
 
 $carousel-image-width: 50vw;
 $carousel-image-width-desktop: 25rem;

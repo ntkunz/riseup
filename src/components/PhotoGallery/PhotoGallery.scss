@@ -3,18 +3,20 @@
 @use '../../styles/global' as *;
 
 .gallery {
-  margin: 3rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
+  background-image: linear-gradient(rgba($yellow-light, 0.7) 10%, $green-light);
+  padding: 0 2rem;
 
   @include tablet {
     justify-content: space-between;
     gap: 1rem;
+    padding: 0 4rem;
   }
 
   &__image {
+    margin: 1rem;
     border: 0.5rem solid $white-light;
     border-image: linear-gradient(
         335deg,

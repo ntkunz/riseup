@@ -5,6 +5,10 @@
 .header {
   position: relative;
   letter-spacing: 0.125rem;
+  background: linear-gradient(
+    rgba($red-dark, 0.7) 10%,
+    rgba($red-light, 0.7) 25%
+  );
 
   &__text-container {
     background: linear-gradient(
@@ -13,7 +17,7 @@
       rgba($black-dark, 0)
     );
     color: $yellow-light;
-    text-shadow: 0.05rem 0.05rem 0.1em $red-light;
+    text-shadow: 0.05rem 0.05rem 0.1em $black-dark;
     padding: calc(1vw + 0.7rem);
     container-type: inline-size;
 
@@ -28,8 +32,8 @@
   }
 
   &__logo {
-    -webkit-filter: drop-shadow(0 0 0.05rem $black-dark);
-    filter: drop-shadow(0 0 0.05rem $black-dark);
+    -webkit-filter: drop-shadow(0 0 0.2rem $black-light);
+    filter: drop-shadow(0 0 0.2rem $black-light);
     padding: 2rem 1rem 0;
     width: 60%;
     max-width: 20rem;
