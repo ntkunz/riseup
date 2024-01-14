@@ -1,7 +1,9 @@
-export default function DoordashIcon() {
+// eslint-disable-next-line react/prop-types
+export default function DoordashIcon({ className }) {
+
    return (
       <svg
-         className="social-icon"
+         className={className}
          fill="#ff3008"
          width="10rem"
          height="10rem"
