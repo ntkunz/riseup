@@ -10,10 +10,11 @@ export default function Header() {
             <div className="header__details-container">
 
                <time className="header__details"><p>Monday - Friday 9-6 , Sat 10-4</p></time>
-               <address className="header__details"><p>704 Vernon Dr. Vancouver, BC</p></address>
+
             </div>
          </div>
          <img className="header__image" src="/images/riseup-marketplace-front-view.jpg" alt="Photography of the front of Rise Up MarketPlace" />
+         <address className="header__details"><p>704 Vernon Dr. Vancouver, BC</p></address>
       </header>
    )
 }

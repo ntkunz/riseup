@@ -34,7 +34,7 @@
     font-size: $font-size-medium;
     font-weight: normal;
     color: $black-light;
-    text-shadow: $white-dark 0.05rem 0.1rem 0.1rem;
+    text-shadow: $green-light 0.05rem 0.1rem 0.05rem;
     @include tablet {
       text-align: left;
     }
@@ -83,7 +83,7 @@
     width: 70%;
     max-width: 20rem;
     box-shadow: 0.125rem 0.125rem 0.25rem $yellow-light;
-    border: $yellow-light solid 0.125rem;
+    border: $green-light solid 0.125rem;
     border-radius: 0.25rem;
 
     @include tablet {
@@ -93,9 +93,11 @@
   }
 
   &__item-title {
-    color: $white-dark;
+    // color: $white-dark;
+    color: $red-light;
     font-weight: bold;
-    text-shadow: 0.1rem 0.1rem 0.125rem $black-light;
+    // text-shadow: 0.1rem 0.1rem 0.125rem $black-light;
+    text-shadow: 0.1rem 0.1rem 0.125rem $yellow-light;
     letter-spacing: 0.1rem;
     line-height: 2.5rem;
 

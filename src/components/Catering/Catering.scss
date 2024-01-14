@@ -1,0 +1,12 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+@use '../../styles/global' as *;
+
+.catering {
+  color: $black-dark;
+  font-weight: bold;
+  letter-spacing: 0.125rem;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  text-shadow: $white-dark 0.05rem 0.05rem 0.2rem;
+  background-color: $green-light;
+}
