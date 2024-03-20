@@ -2,6 +2,8 @@ import "./Catering.scss";
 
 export default function Catering() {
    return (
-      <h5 className="catering">* Ask about catering</h5>
+      <section className="catering">
+         <h5 className="catering__title">We offer catering</h5>
+      </section>
    )
 }

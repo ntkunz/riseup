@@ -3,14 +3,11 @@ import { lazy } from "react";
 import Header from "../../components/Header/Header";
 import Tagline from "../../components/Tagline/Tagline";
 const PhotoGallery = lazy(() => import("../../components/PhotoGallery/PhotoGallery"));
-// import PhotoGallery from "../../components/PhotoGallery/PhotoGallery"
-import Catering from "../../components/Catering/Catering";
+// import Catering from "../../components/Catering/Catering";
 const Menu = lazy(() => import("../../components/Menu/Menu"));
-// import Menu from "../../components/Menu/Menu";
 const Carousel = lazy(() => import("../../components/Carousel/Carousel"));
-// import Carousel from "../../components/Carousel/Carousel";
 const Footer = lazy(() => import("../../components/Footer/Footer"));
-// import Footer from "../../components/Footer/Footer";
+
 
 
 export default function Home() {
@@ -21,7 +18,7 @@ export default function Home() {
             <Header />
             <Tagline />
             <PhotoGallery />
-            <Catering />
+            {/* <Catering /> */}
             <Menu />
             <Carousel />
             <Footer />

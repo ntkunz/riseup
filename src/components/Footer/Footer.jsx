@@ -13,7 +13,7 @@ export default function Footer() {
          <div className="footer__store-details">
             <h4 className="footer__details">704 Vernon Dr, Vancouver, BC</h4>
             <h4 className="footer__details">Mon - Fri 9-6 , Sat 10-4</h4>
-            <p><a className="footer__contact-link" href="mailto:roger@riseuponelove.com">contact@riseuponelove.com</a></p>
+            <p><a className="footer__contact-link" href="mailto:contact@riseuponelove.com">contact@riseuponelove.com</a></p>
          </div>
 
 

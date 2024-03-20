@@ -15,7 +15,6 @@
     }
   }
 
-  // with icon styles
   &__button {
     background-color: $yellow-light;
     padding: 0.5rem;
@@ -27,6 +26,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.25rem;
+    box-shadow: 0.05rem 0.05rem 0.1rem rgba($black-dark, 0.5);
 
     &:hover {
       cursor: pointer;
