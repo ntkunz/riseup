@@ -11,7 +11,8 @@
 
   &__title {
     letter-spacing: 0.125rem;
-    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-size: $font-size-medium;
+    font-weight: normal;
     text-shadow: $yellow-light 0.05rem 0.05rem 0.1rem;
     background-color: rgba($white-light, 0.5);
     width: fit-content;

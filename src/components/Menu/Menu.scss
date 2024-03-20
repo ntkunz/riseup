@@ -3,7 +3,7 @@
 @use '../../styles/global' as *;
 
 .menu {
-  padding: 0, 0.5rem, 0.5rem, 0.5rem;
+  padding: 0 0.5rem 0 0.5rem;
   container-type: inline-size;
   background-image: linear-gradient(
     rgba($green-light, 1) 0.05%,
@@ -94,14 +94,12 @@
   }
 
   &__item-title {
-    // color: $white-dark;
-    color: $red-light;
-    // font-weight: bold;
-    font-size: $font-size-medium;
-    // text-shadow: 0.1rem 0.1rem 0.125rem $black-light;
-    text-shadow: 0.1rem 0.1rem 0.025rem $yellow-light;
+    color: $white-light;
+    font-size: $font-size-extra-large;
+    text-shadow: 0.05rem 0.051rem 0.05rem $black-dark;
     letter-spacing: 0.1rem;
-    line-height: 2.5rem;
+    line-height: 4rem;
+    // font-weight: bold;
 
     @include tablet {
       letter-spacing: 0.2rem;
