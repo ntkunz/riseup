@@ -35,24 +35,13 @@ html {
   overflow-x: hidden;
 }
 
-body {
-  background: linear-gradient(
-    rgba($red-dark, 0.7) 10%,
-    rgba($red-light, 0.7) 25%,
-    rgba($yellow-light, 0.7) 30%,
-    rgba($yellow-dark, 0.7) 45%,
-    rgba($green-light, 0.7) 50%,
-    rgba($green-dark, 0.7) 65%,
-    rgba($black-dark, 0.7) 95%
-  );
-}
-
 h1 {
   font-size: $font-size-large;
 }
 
 h2 {
   font-size: $font-size-extra-large;
+  letter-spacing: 0.125rem;
 }
 
 h3 {
@@ -63,11 +52,12 @@ h4 {
   font-weight: normal;
 }
 
+h2,
 h4,
 h5,
 h6,
 p {
-  font-family: alumni-sans, Avenir, Helvetica, sans-serif;
+  font-family: alumni-sans, 'Gill Sans', 'Gill Sans MT', Calibri;
 }
 
 p {

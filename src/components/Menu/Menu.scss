@@ -3,13 +3,17 @@
 @use '../../styles/global' as *;
 
 .menu {
-  margin: 0 0.5rem;
-  padding: 0.5rem;
+  padding: 0, 0.5rem, 0.5rem, 0.5rem;
   container-type: inline-size;
+  background-image: linear-gradient(
+    rgba($green-light, 1) 0.05%,
+    rgba($yellow-light, 0.45) 1%
+  );
+  background-color: rgba($yellow-light, 0.85);
 
   &__item-container {
-    border-bottom: rgba($black-light, 0.75) solid 0.25rem;
-    border-top: rgba($black-light, 0.75) solid 0.25rem;
+    border-bottom: rgba($black-dark, 0.9) solid 0.25rem;
+    border-top: rgba($black-dark, 0.9) solid 0.25rem;
     border-radius: 1rem;
     margin-bottom: 2rem;
 
@@ -22,14 +26,16 @@
   }
 
   &__title {
-    color: $yellow-light;
+    // color: $yellow-light;
+    color: $red-light;
     text-shadow: $multi-color-shadow;
   }
 
   &__subtitle {
     font-size: $font-size-medium;
     font-weight: normal;
-    color: $yellow-light;
+    color: $black-light;
+    text-shadow: $green-light 0.05rem 0.1rem 0.05rem;
     @include tablet {
       text-align: left;
     }
@@ -38,9 +44,14 @@
   &__category {
     padding: 1rem;
     border-radius: 0.5rem;
-    margin-bottom: 2rem;
+    background-color: rgba($black-dark, 0.3);
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
 
     @include tablet {
+      margin-bottom: 1rem;
       text-align: left;
       display: flex;
       flex-direction: column;
@@ -72,6 +83,9 @@
   &__image {
     width: 70%;
     max-width: 20rem;
+    box-shadow: 0.125rem 0.125rem 0.25rem $yellow-light;
+    border: $green-light solid 0.125rem;
+    border-radius: 0.25rem;
 
     @include tablet {
       order: 2;
@@ -80,22 +94,31 @@
   }
 
   &__item-title {
-    color: $white-dark;
-    text-shadow: 0.05rem 0.05rem 0.1rem $black-light;
-    font-weight: 700;
-    letter-spacing: 0.125rem;
+    // color: $white-dark;
+    color: $red-light;
+    // font-weight: bold;
+    font-size: $font-size-medium;
+    // text-shadow: 0.1rem 0.1rem 0.125rem $black-light;
+    text-shadow: 0.1rem 0.1rem 0.025rem $yellow-light;
+    letter-spacing: 0.1rem;
     line-height: 2.5rem;
+
+    @include tablet {
+      letter-spacing: 0.2rem;
+    }
   }
 
   &__item-price {
     color: $white-dark;
     text-shadow: $multi-color-shadow;
+    text-shadow: $black-light 0.05rem 0.05rem 0.05rem;
   }
 
   &__item-description {
-    color: $white-dark;
-    text-shadow: 0.05rem 0.05rem 0.1rem $black-dark;
-    line-height: normal;
+    padding: 0.5rem 0;
+    color: $white-light;
+    text-shadow: $black-dark 0rem 0rem 0.25rem;
+    line-height: 2rem;
   }
 
   &__item-disclaimer {

@@ -12,7 +12,6 @@ export default function MenuCategory(menuSectionItems) {
                   <img src={item.image} className="menu__image" alt={`Menu item ${item.title} from riseup marketplace`} />
                }
                <p className="menu__item-description" dangerouslySetInnerHTML={{ __html: item.description }}></p>
-               {item.disclaimer && <p className="menu__item-disclaimer">{item.disclaimer}</p>}
             </div>
          ))}
       </>
