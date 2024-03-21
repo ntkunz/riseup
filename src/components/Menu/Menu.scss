@@ -3,12 +3,13 @@
 @use '../../styles/global' as *;
 
 .menu {
-  padding: 0.5rem;
+  padding: 0 0.5rem 0 0.5rem;
   container-type: inline-size;
   background-image: linear-gradient(
-    rgba($green-light, 1) 0.125%,
-    rgba($yellow-light, 0.85) 0.5%
+    rgba($green-light, 1) 0.05%,
+    rgba($yellow-light, 0.45) 1%
   );
+  background-color: rgba($yellow-light, 0.85);
 
   &__item-container {
     border-bottom: rgba($black-dark, 0.9) solid 0.25rem;
@@ -25,7 +26,6 @@
   }
 
   &__title {
-    // color: $yellow-light;
     color: $red-light;
     text-shadow: $multi-color-shadow;
   }
@@ -93,16 +93,17 @@
   }
 
   &__item-title {
-    // color: $white-dark;
-    color: $red-light;
-    font-weight: bold;
-    // text-shadow: 0.1rem 0.1rem 0.125rem $black-light;
-    text-shadow: 0.1rem 0.1rem 0.125rem $yellow-light;
-    letter-spacing: 0.1rem;
-    line-height: 2.5rem;
+    color: $white-light;
+    font-size: $font-size-extra-large;
+    text-shadow: 0.05rem 0.051rem 0.05rem $black-dark;
+    // letter-spacing: 0.1rem;
+    line-height: 4rem;
+    // font-weight: bold;
 
     @include tablet {
       letter-spacing: 0.2rem;
+      font-size: $font-size-medium;
+      line-height: 2rem;
     }
   }
 

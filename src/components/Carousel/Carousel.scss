@@ -8,12 +8,8 @@
   background-image: url('../../assets/logo/riseup-logo-color.png');
   background-position: center;
   background-repeat: no-repeat;
-  padding: $section-padding-mobile 0;
-  margin: 0 auto;
-
-  @include tablet {
-    padding: $section-padding-tablet 0;
-  }
+  padding: $section-padding-tablet 0;
+  margin: 1rem auto 0;
 
   &__container {
     display: flex;

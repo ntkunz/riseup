@@ -5,6 +5,7 @@
 .menu-buttons {
   &__container {
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
@@ -12,10 +13,10 @@
 
     @include tablet {
       gap: 3rem;
+      flex-direction: row;
     }
   }
 
-  // with icon styles
   &__button {
     background-color: $yellow-light;
     padding: 0.5rem;
@@ -27,6 +28,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.25rem;
+    box-shadow: 0.05rem 0.05rem 0.1rem rgba($black-dark, 0.5);
 
     &:hover {
       cursor: pointer;
@@ -43,28 +45,4 @@
       height: 5rem;
     }
   }
-
-  // just text button styles below
-  // &__button {
-  //   color: $black-dark;
-  //   text-shadow: $white-light 0.05rem 0.05rem 0.05rem;
-  //   font-weight: bold;
-  //   letter-spacing: 0.1rem;
-  //   text-underline-offset: 0.2em;
-  //   padding: 0.5rem 1rem;
-  //   background: radial-gradient(rgba($green-light, 0.7), $yellow-dark);
-  //   border: $yellow-light solid 0.125rem;
-  //   border-radius: 0.25rem;
-  //   height: fit-content;
-
-  //   @include tablet {
-  //     padding: 0.5rem 2rem;
-  //   }
-
-  //   &:hover {
-  //     cursor: pointer;
-  //     background: radial-gradient($green-light, $yellow-light);
-  //     border: $red-dark solid 0.125rem;
-  //   }
-  // }
 }
