@@ -26,7 +26,6 @@
   }
 
   &__title {
-    // color: $yellow-light;
     color: $red-light;
     text-shadow: $multi-color-shadow;
   }
@@ -97,12 +96,14 @@
     color: $white-light;
     font-size: $font-size-extra-large;
     text-shadow: 0.05rem 0.051rem 0.05rem $black-dark;
-    letter-spacing: 0.1rem;
+    // letter-spacing: 0.1rem;
     line-height: 4rem;
     // font-weight: bold;
 
     @include tablet {
       letter-spacing: 0.2rem;
+      font-size: $font-size-medium;
+      line-height: 2rem;
     }
   }
 

@@ -11,10 +11,6 @@
   padding: $section-padding-tablet 0;
   margin: 1rem auto 0;
 
-  @include tablet {
-    padding: $section-padding-tablet 0;
-  }
-
   &__container {
     display: flex;
     align-items: center;
